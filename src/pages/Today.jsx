@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
 import AppstorePage from '../components/AppstorePage';
@@ -19,7 +18,7 @@ const Today = () => {
   const yesterdayDateHeading = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long' }).format(yesterdayDate);
 
   const appCrossyRoad = games.find((app) => app.title === 'Crossy Road');
-  const appNetlfix = apps.find((app) => app.title === 'Netflix');
+  const appNetflix = apps.find((app) => app.title === 'Netflix');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
   const appSevenSins = games.find((app) => app.title === 'The Seven Deadly Sins');
 
@@ -64,7 +63,7 @@ const Today = () => {
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
-          app={appNetlfix}
+          app={appNetflix}
         >
           <p>Lorem ipsum, <b>dolor sit amet consectetur adipisicing</b> elit. Explicabo sapiente nisi accusantium earum quos culpa quam doloremque distinctio suscipit nobis corrupti eaque, debitis quasi quisquam rerum quas beatae dolorem eos?</p>
           <p>Magnam obcaecati fugit, ullam nostrum in dolore sed ab culpa ipsum architecto sunt distinctio necessitatibus et. Quam laborum delectus tenetur rem quae itaque ad numquam, eveniet, repudiandae quas eum unde?</p>

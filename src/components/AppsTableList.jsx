@@ -5,11 +5,11 @@ import './AppsTableList.less';
 
 const AppsTableList = ({ apps, backText, style }) => {
   return (
-    <List className="apps-table-list" noChevron noHairlines style={ style }>
+    <List className="apps-table-list" noChevron noHairlines style={style}>
       {apps.map((app) => (
         <ListItem
-          link={`/app/${app.id}`}
-          key={app.id}
+          link={`/app/${app.packageName}`} // Changed from app.id to app.packageName
+          key={app.packageName}
           routeProps={{ backText }}
         >
           <div className="apps-table-list-title" slot="title">{app.title}</div>

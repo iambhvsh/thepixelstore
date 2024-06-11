@@ -23,16 +23,17 @@ import { apps, games } from '../js/data';
 
 import './AppDetails.less';
 
-function getAppById(id) {
-  return [...apps, ...games].find((app) => app.id === parseInt(id, 10));
+function getAppByPackageName(packageName) {
+  return [...apps, ...games].find((app) => app.packageName === packageName);
 }
+
 function formatDate(date) {
   const formatter = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: 'numeric' });
   return formatter.format(new Date(date));
 }
 
-const AppDetails = ({ id, backText }) => {
-  const app = getAppById(id);
+const AppDetails = ({ packageName, backText }) => {
+  const app = getAppByPackageName(packageName);
   const pb = useRef(null);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const ratingVotes = {
@@ -43,7 +44,7 @@ const AppDetails = ({ id, backText }) => {
     1: 200,
   };
 
-  const totalVotes = Object.values(ratingVotes).reduce((acc, current) => acc + current);
+  const totalVotes = Object.values(ratingVotes).reduce((acc, current) => acc + current, 0);
 
   function pageInit() {
     pb.current = f7.photoBrowser.create({
@@ -52,9 +53,11 @@ const AppDetails = ({ id, backText }) => {
       navbarShowCount: false,
     });
   }
+
   function pageDestroy() {
     if (pb.current) pb.current.destroy();
   }
+
   function openPhotoBrowser(index) {
     if (!pb.current) return;
     pb.current.open(index);
@@ -77,7 +80,7 @@ const AppDetails = ({ id, backText }) => {
           <img src={app.icon} alt={app.title} />
         </div>
         <div className="app-navbar-button" slot="right">
-          <Button external target="_blank" href={`https://apps.apple.com/app/id${app.id}`} round fill>GET</Button>
+          <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
         </div>
       </Navbar>
       <div className="block app-header">
@@ -86,7 +89,7 @@ const AppDetails = ({ id, backText }) => {
           <div className="app-header-title">{app.title}</div>
           <div className="app-header-subtitle">{app.subtitle}</div>
           <div className="app-header-actions">
-            <Button external target="_blank" href={`https://apps.apple.com/app/id${app.id}`} round fill>GET</Button>
+            <Button external target="_blank" href={`https://play.google.com/store/apps/details?id=${app.packageName}`} round fill>GET</Button>
             <Link iconF7="square_arrow_up" />
           </div>
           <div className="app-header-ratings">
@@ -111,7 +114,9 @@ const AppDetails = ({ id, backText }) => {
       <div className={`block app-description ${showFullDescription ? 'app-description-full' : ''}`}>
         <div className="app-description-content">
           <div className="app-description-text" dangerouslySetInnerHTML={createAppDescription()} />
-          <Link onClick={() => setShowFullDescription(true)}>more</Link>
+          {!showFullDescription && (
+            <Link onClick={() => setShowFullDescription(true)}>more</Link>
+          )}
         </div>
       </div>
       <AppstoreBlockTitle title="Ratings & Reviews">
@@ -140,6 +145,7 @@ const AppDetails = ({ id, backText }) => {
       </div>
       {/* Random reviews */}
       <div className="block app-reviews">
+        {/* Example review */}
         <div className="app-review">
           <div className="app-review-header">
             <span><b>John</b></span>
@@ -153,71 +159,7 @@ const AppDetails = ({ id, backText }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum debitis natus cum quae est rerum cupiditate cumque delectus eaque ipsa, accusamus facilis deleniti consequuntur, aliquam soluta minima, eos exercitationem.
           </div>
         </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Mike</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={3} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur laudantium, laborum sunt adipisci magni in doloremque neque error earum fugiat! Nihil molestias rem tenetur laboriosam illo similique nobis adipisci?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Vladimir</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={2} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, repudiandae minima? Reprehenderit ab placeat delectus necessitatibus suscipit cumque laborum modi, eaque, a consequuntur, pariatur et itaque. Vitae odio necessitatibus amet.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Karoly</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={4} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab ex! Architecto alias delectus, optio eos nostrum obcaecati repellat distinctio, ab, quam dolores voluptatem ex inventore facere expedita exercitationem repudiandae?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Peter</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={5} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo odit exercitationem eligendi maiores rerum quo, quos ullam quam! Quia facilis consequatur vitae cupiditate molestias maiores odit magnam quo itaque.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Alim</b></span>
-            <span>5d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={1} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ipsa accusantium qui praesentium, obcaecati quae illum, tempora molestias similique nihil sunt in tempore ipsam laborum illo maxime amet quos consectetur!
-          </div>
-        </div>
+        {/* Other reviews can be added here */}
       </div>
       {app.versions && app.versions.length > 0 && (
         <>
@@ -234,16 +176,16 @@ const AppDetails = ({ id, backText }) => {
       <AppstoreBlockTitle title="Information" />
       <List noHairlines noChevron className="safe-areas-inset app-information-list">
         <ListItem title="Provider" after={app.developer.name} />
-        <ListItem title="Size" after={`${Math.floor(app.size / 1000000)} MB`} />
+        <ListItem title="Size" after={app.size} />
         <ListItem title="Compatibility" after="Works on this iPhone" />
         <ListItem title="Languages" after="English" />
         <ListItem title="Age Rating" after="12+" />
         <ListItem title="In-App Purchases" after="Yes" />
         <ListItem title="Copyright" after={`© ${app.developer.name}`} />
-        <ListItem link={`https://apps.apple.com/developer/id${app.developer.id}`} external target="_blank" title="Developer Website">
+        <ListItem link={`https://play.google.com/store/apps/developer?id=${app.developer.id}`} external target="_blank" title="Developer Website">
           <Icon slot="after" f7="compass" />
         </ListItem>
-        <ListItem link={`https://apps.apple.com/developer/id${app.developer.id}`} external target="_blank" title="Privacy Policy">
+        <ListItem link={`https://play.google.com/store/apps/developer?id=${app.developer.id}`} external target="_blank" title="Privacy Policy">
           <Icon slot="after" f7="hand_raised_fill" />
         </ListItem>
       </List>

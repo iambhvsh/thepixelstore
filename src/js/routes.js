@@ -26,7 +26,7 @@ const routes = [
     component: Search,
   },
   {
-    path: '/app/:id',
+    path: '/app/:packageName',
     asyncComponent: () => import(/* webpackChunkName: "app-details" *//* webpackPreload: true */ '../pages/AppDetails'),
   },
   {

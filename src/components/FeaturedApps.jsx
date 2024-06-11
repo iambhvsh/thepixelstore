@@ -7,8 +7,8 @@ const FeaturedApps = ({ apps, useIcon, backText }) => {
   return (
     <div className="block featured-apps">
       {apps.map((app) => (
-        <div className="featured-app" key={app.id}>
-          <Link noLinkClass href={`/app/${app.id}`} routeProps={{ backText }}>
+        <div className="featured-app" key={app.packageName}>
+          <Link noLinkClass href={`/app/${app.packageName}`} routeProps={{ backText }}>
             <div className="featured-app-headline">{app.featured}</div>
             <div className="featured-app-title">{app.title}</div>
             <div className="featured-app-subtitle">{app.subtitle}</div>
