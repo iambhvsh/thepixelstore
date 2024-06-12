@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
+
 import AppstorePage from '../components/AppstorePage';
 import AppstorePageTitle from '../components/AppstorePageTitle';
 import AppstoreCard from '../components/AppstoreCard';
@@ -17,7 +19,7 @@ const Today = () => {
   const yesterdayDateHeading = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long' }).format(yesterdayDate);
 
   const appCrossyRoad = games.find((app) => app.title === 'Crossy Road');
-  const appNetflix = apps.find((app) => app.title === 'Netflix');
+  const appNetfix = apps.find((app) => app.title === 'Netflix');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
   const appSevenSins = games.find((app) => app.title === 'The Seven Deadly Sins');
 
@@ -62,7 +64,7 @@ const Today = () => {
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
-          app={appNetflix}
+          app={appNetlfix}
         >
           <p>Lorem ipsum, <b>dolor sit amet consectetur adipisicing</b> elit. Explicabo sapiente nisi accusantium earum quos culpa quam doloremque distinctio suscipit nobis corrupti eaque, debitis quasi quisquam rerum quas beatae dolorem eos?</p>
           <p>Magnam obcaecati fugit, ullam nostrum in dolore sed ab culpa ipsum architecto sunt distinctio necessitatibus et. Quam laborum delectus tenetur rem quae itaque ad numquam, eveniet, repudiandae quas eum unde?</p>
@@ -101,7 +103,7 @@ const Today = () => {
           <p>Lorem ipsum, <b>dolor sit amet consectetur adipisicing</b> elit. Explicabo sapiente nisi accusantium earum quos culpa quam doloremque distinctio suscipit nobis corrupti eaque, debitis quasi quisquam rerum quas beatae dolorem eos?</p>
           <p>Magnam obcaecati fugit, ullam nostrum in dolore sed ab culpa ipsum architecto sunt distinctio necessitatibus et. Quam laborum delectus tenetur rem quae itaque ad numquam, eveniet, repudiandae quas eum unde?</p>
           <h3>Enim laboriosam repellat</h3>
-          <p>Dignissimos recusandae consectetur adipisci minima vel molestiae laboriosam quisquam libero quos sint, expedita necessitatibus. Asperiores, consectetur! Odio nobis odit placeat quos magni. Enim laboriosam repellat a      blanditiis doloremque esse repellendus?</p>
+          <p>Dignissimos recusandae consectetur adipisci minima vel molestiae laboriosam quisquam libero quos sint, expedita necessitatibus. Asperiores, consectetur! Odio nobis odit placeat quos magni. Enim laboriosam repellat a blanditiis doloremque esse repellendus?</p>
           <p>Commodi, similique tempora, nesciunt voluptatem blanditiis, dignissimos voluptas quidem cupiditate soluta magni dolorem sequi illum accusamus temporibus iste dolorum voluptates illo maxime sit nulla. Ullam, repellendus. Explicabo architecto laborum itaque.</p>
         </AppstoreCard>
       </div>
