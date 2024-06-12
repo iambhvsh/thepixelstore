@@ -13,6 +13,7 @@ import AppstorePage from '../components/AppstorePage';
 import FeaturedApps from '../components/FeaturedApps';
 import AppsTableList from '../components/AppsTableList';
 import AppstoreBlockTitle from '../components/AppstoreBlockTitle';
+import './Games.less';  // Import the stylesheet
 
 const Games = () => {
   const featuredGames = games.filter((app) => !!app.featured);
@@ -81,50 +82,49 @@ const Games = () => {
         </ListItem>
         <ListItem
           title="Racing"
-link="#"
->
-<span role="img" slot="media" aria-label="Racing">🏁</span>
-</ListItem>
-</List>
+          link="#"
+        >
+          <span role="img" slot="media" aria-label="Racing">🏁</span>
+        </ListItem>
+      </List>
 
-  <AppstoreBlockTitle title="Editors' Choice">
-    <Link>See All</Link>
-  </AppstoreBlockTitle>
-  <AppsTableList backText="Games" apps={editorsChoice} />
+      <AppstoreBlockTitle title="Editors' Choice">
+        <Link>See All</Link>
+      </AppstoreBlockTitle>
+      <AppsTableList backText="Games" apps={editorsChoice} />
 
-  <AppstoreBlockTitle title="Quick Links">
-    <Link>See All</Link>
-  </AppstoreBlockTitle>
-  <List className="quick-links-list safe-areas-inset" noChevron noHairlines>
-    <ListItem
-      title="Try Apple Arcade"
-      link="#"
-    />
-    <ListItem
-      title="About In-App Purchases"
-      link="#"
-    />
-    <ListItem
-      title="Parents' Guide to the App Store"
-      link="#"
-    />
-    <ListItem
-      title="About Apps & Games for You"
-      link="#"
-    />
-    <ListItem
-      title="About Personalisation"
-      link="#"
-    />
-  </List>
+      <AppstoreBlockTitle title="Quick Links">
+        <Link>See All</Link>
+      </AppstoreBlockTitle>
+      <List className="quick-links-list safe-areas-inset" noChevron noHairlines>
+        <ListItem
+          title="Try Apple Arcade"
+          link="#"
+        />
+        <ListItem
+          title="About In-App Purchases"
+          link="#"
+        />
+        <ListItem
+          title="Parents' Guide to the App Store"
+          link="#"
+        />
+        <ListItem
+          title="About Apps & Games for You"
+          link="#"
+        />
+        <ListItem
+          title="About Personalisation"
+          link="#"
+        />
+      </List>
 
-  <Block className="buttons-list">
-    <Button large>Redeem</Button>
-    <Button large>Send Gift</Button>
-    <Button large>Add Funds to Apple ID</Button>
-  </Block>
-</AppstorePage>
-
+      <Block className="buttons-list">
+        <Button large>Redeem</Button>
+        <Button large>Send Gift</Button>
+        <Button large>Add Funds to Apple ID</Button>
+      </Block>
+    </AppstorePage>
   );
 };
 
