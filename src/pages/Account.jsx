@@ -27,7 +27,7 @@ const Account = () => {
             chevronCenter
             link
           >
-            <img slot="media" src="iambhvsh.png" alt="Bhavesh Patil" />
+            <img slot="media" src="https://iambhvsh.vercel.app/assets/blog/authors/iambhvsh.png" alt="Bhavesh Patil" />
           </ListItem>
         </List>
         
@@ -43,7 +43,7 @@ const Account = () => {
           />
           <ListItem
             title="Email"
-            after="bhavesh@example.com"
+            after="iambhvshh@outlook.com"
           />
         </List>
         
