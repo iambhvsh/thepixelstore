@@ -1,8 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable react/no-danger */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState, useRef } from 'react';
 import {
   f7,
@@ -23,16 +18,16 @@ import { apps, games } from '../js/data';
 
 import './AppDetails.less';
 
-function getAppById(id) {
-  return [...apps, ...games].find((app) => app.id === parseInt(id, 10));
+function getAppByPackageName(packageName) {
+  return [...apps, ...games].find((app) => app.packageName === packageName);
 }
 function formatDate(date) {
   const formatter = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: 'numeric' });
   return formatter.format(new Date(date));
 }
 
-const AppDetails = ({ id, backText }) => {
-  const app = getAppById(id);
+const AppDetails = ({ packageName, backText }) => {
+  const app = getAppByPackageName(packageName);
   const pb = useRef(null);
   const [showFullDescription, setShowFullDescription] = useState(false);
   const ratingVotes = {
@@ -77,7 +72,7 @@ const AppDetails = ({ id, backText }) => {
           <img src={app.icon} alt={app.title} />
         </div>
         <div className="app-navbar-button" slot="right">
-          <Button external target="_blank" href={`https://apps.apple.com/app/id${app.id}`} round fill>GET</Button>
+          <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
         </div>
       </Navbar>
       <div className="block app-header">
@@ -93,7 +88,7 @@ const AppDetails = ({ id, backText }) => {
             <div className="app-header-rating">
               <div className="app-header-rating-value">{app.rating}</div>
               <RatingStars rating={app.rating} />
-              <div className="app-header-rating-sub">930 Ratings</div>
+              <div className="app-header-rating-sub">{app.totalRatings} Ratings</div>
             </div>
           </div>
         </div>
@@ -234,8 +229,8 @@ const AppDetails = ({ id, backText }) => {
       <AppstoreBlockTitle title="Information" />
       <List noHairlines noChevron className="safe-areas-inset app-information-list">
         <ListItem title="Provider" after={app.developer.name} />
-        <ListItem title="Size" after={`${Math.floor(app.size / 1000000)} MB`} />
-        <ListItem title="Compatibility" after="Works on this iPhone" />
+        <ListItem title="Size" after={app.size} />
+        <ListItem title="Compatibility" after="Works on this Android" />
         <ListItem title="Languages" after="English" />
         <ListItem title="Age Rating" after="12+" />
         <ListItem title="In-App Purchases" after="Yes" />
