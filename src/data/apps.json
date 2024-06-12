@@ -13,6 +13,7 @@
     "size": "24.4 MB",
     "promotionalText": "",
     "rating": 4.9,
+    "totalRatings": "2.5M",
     "developer": {
       "name": "OpenAI",
       "id": "1684349733"
@@ -48,6 +49,7 @@
     "size": "175 MB",
     "promotionalText": "",
     "rating": 4.7,
+    "totalRatings": "566K",
     "developer": {
       "name": "Google LLC",
       "id": 281956209
@@ -81,6 +83,7 @@
     "size": "67.6 MB",
     "promotionalText": "",
     "rating": 4.8,
+    "totalRating": "3.6B",
     "developer": {
       "name": "Instagram, Inc.",
       "id": 389801255
@@ -113,6 +116,7 @@
     "size": "136.8 MB",
     "promotionalText": "Get your new go-to photo and video editor on mobile. Download to access highly popular Sketch Effects, Magic Effects, Beautify Tool, free Stickers, and more!",
     "rating": 4.7,
+    "totalRating": "96K",
     "developer": {
       "name": "PicsArt, Inc.",
       "id": 587366038
