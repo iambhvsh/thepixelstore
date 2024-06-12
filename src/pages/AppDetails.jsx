@@ -1,8 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable react/no-danger */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState, useRef } from 'react';
 import {
   f7,
@@ -89,14 +84,14 @@ const AppDetails = ({ packageName, backText }) => {
           <div className="app-header-title">{app.title}</div>
           <div className="app-header-subtitle">{app.subtitle}</div>
           <div className="app-header-actions">
-            <Button external target="_blank" href={`https://play.google.com/store/apps/details?id=${app.packageName}`} round fill>GET</Button>
+            <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
             <Link iconF7="square_arrow_up" />
           </div>
           <div className="app-header-ratings">
             <div className="app-header-rating">
               <div className="app-header-rating-value">{app.rating}</div>
               <RatingStars rating={app.rating} />
-              <div className="app-header-rating-sub">930 Ratings</div>
+              <div className="app-header-rating-sub">{app.totalRatings} Ratings</div>
             </div>
           </div>
         </div>
@@ -120,7 +115,6 @@ const AppDetails = ({ packageName, backText }) => {
         </div>
       </div>
       <AppstoreBlockTitle title="Ratings & Reviews">
-        <Link>See All</Link>
       </AppstoreBlockTitle>
       <div className="block app-ratings">
         <div className="app-ratings-number">
@@ -177,15 +171,15 @@ const AppDetails = ({ packageName, backText }) => {
       <List noHairlines noChevron className="safe-areas-inset app-information-list">
         <ListItem title="Provider" after={app.developer.name} />
         <ListItem title="Size" after={app.size} />
-        <ListItem title="Compatibility" after="Works on this iPhone" />
+        <ListItem title="Compatibility" after="Works on this Device" />
         <ListItem title="Languages" after="English" />
         <ListItem title="Age Rating" after="12+" />
         <ListItem title="In-App Purchases" after="Yes" />
         <ListItem title="Copyright" after={`© ${app.developer.name}`} />
-        <ListItem link={`https://play.google.com/store/apps/developer?id=${app.developer.id}`} external target="_blank" title="Developer Website">
+        <ListItem link={`https://apps.apple.com/developer/id${app.developer.id}`} external target="_blank" title="Developer Website">
           <Icon slot="after" f7="compass" />
         </ListItem>
-        <ListItem link={`https://play.google.com/store/apps/developer?id=${app.developer.id}`} external target="_blank" title="Privacy Policy">
+        <ListItem link={`https://apps.apple.com/developer/id${app.developer.id}`} external target="_blank" title="Privacy Policy">
           <Icon slot="after" f7="hand_raised_fill" />
         </ListItem>
       </List>
