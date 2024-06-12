@@ -31,7 +31,7 @@ const AppstoreCard = ({
     <Card expandable className="appstore-card">
       <CardContent padding={false}>
         <div className={`appstore-card-header appstore-card-header-text-${titlePosition}`}>
-          <img src={image} alt={imageAlt} className="appstore-card-image" />
+          <img src={image} alt={imageAlt} />
           <div className="appstore-card-header-text">
             <div className="appstore-card-subtitle" style={{ color: subtitleColor }}>{subtitle}</div>
             <div className="appstore-card-title" style={titleStyle}>{title}</div>
@@ -41,7 +41,7 @@ const AppstoreCard = ({
           )}
         </div>
         <div className="appstore-card-close-button card-opened-fade-in">
-          <a href="#" className="link card-close" aria-label="Close">
+          <a href="#" className="link card-close">
             <i style={{ color: closeButtonColor }} className="f7-icons">multiply_circle_fill</i>
           </a>
         </div>
