@@ -13,7 +13,6 @@ import AppstorePage from '../components/AppstorePage';
 import FeaturedApps from '../components/FeaturedApps';
 import AppsTableList from '../components/AppsTableList';
 import AppstoreBlockTitle from '../components/AppstoreBlockTitle';
-import './Games.less';  // Import the stylesheet
 
 const Games = () => {
   const featuredGames = games.filter((app) => !!app.featured);
