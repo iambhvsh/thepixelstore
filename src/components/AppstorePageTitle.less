@@ -17,29 +17,24 @@
   position: relative;
   margin-top: 2em;
   margin-bottom: 0;
-
   .page-content > &:first-child {
     margin: 0;
     margin-top: calc(-1 * var(--f7-navbar-large-title-height));
   }
-
   img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
   }
-
   .router-transition & > span,
   .page-swipeback-active & > span,
   .page-transitioning & > span {
     opacity: 0;
     pointer-events: none;
   }
-
   .appstore-page-no-collapsed-navbar & {
     --f7-navbar-height: 0px;
   }
-
   &-heading {
     position: absolute;
     opacity: 0.55;
@@ -48,43 +43,5 @@
     bottom: 100%;
     text-transform: uppercase;
     letter-spacing: 0;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-
-    &-heading {
-      position: relative;
-      bottom: auto;
-      margin-bottom: 10px;
-    }
-
-    span {
-      margin-bottom: 10px;
-      font-size: var(--f7-navbar-large-title-font-size-mobile);
-    }
-
-    img {
-      align-self: flex-end;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    span {
-      font-size: var(--f7-navbar-large-title-font-size-tablet);
-    }
-  }
-
-  .theme-dark & {
-    color: var(--f7-navbar-large-title-text-color-dark);
-    img {
-      border: 2px solid var(--f7-navbar-large-title-border-color-dark);
-    }
-
-    &-heading {
-      color: var(--f7-navbar-large-title-heading-color-dark);
-    }
   }
 }
