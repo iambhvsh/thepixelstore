@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'framework7-react';
-import avatarSrc from '../assets/iambhvsh.png';
+import avatarSrc from '../assets/avatar.jpeg';
 import './AppstorePageTitle.less';
 
 const AppstorePage = ({
