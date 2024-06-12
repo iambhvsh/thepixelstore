@@ -1,4 +1,5 @@
 import React from 'react';
+import avatarSrc from '../assets/avatar.jpeg';
 import {
   Popup,
   Page,
@@ -27,7 +28,7 @@ const Account = () => {
             chevronCenter
             link
           >
-            <img slot="media" src="https://iambhvsh.vercel.app/assets/blog/authors/iambhvsh.png" alt="Bhavesh Patil" />
+            <img slot="media" src={avatarSrc} alt="Bhavesh Patil" />
           </ListItem>
         </List>
         
