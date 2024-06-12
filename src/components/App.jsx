@@ -56,35 +56,31 @@ const AppComponent = () => {
           <Link
             onClick={() => onTabLinkClick('today')}
             tabLink="#view-today"
-            tabLinkActive={activeTab === 'today'}
+            tabLinkActive
             iconF7="today"
             text="Today"
           />
           <Link
             onClick={() => onTabLinkClick('games')}
             tabLink="#view-games"
-            tabLinkActive={activeTab === 'games'}
             iconF7="rocket_fill"
             text="Games"
           />
           <Link
             onClick={() => onTabLinkClick('apps')}
             tabLink="#view-apps"
-            tabLinkActive={activeTab === 'apps'}
             iconF7="layers_alt_fill"
             text="Apps"
           />
           <Link
             onClick={() => onTabLinkClick('arcade')}
             tabLink="#view-arcade"
-            tabLinkActive={activeTab === 'arcade'}
             iconF7="gamecontroller_alt_fill"
             text="Arcade"
           />
           <Link
             onClick={() => onTabLinkClick('search')}
             tabLink="#view-search"
-            tabLinkActive={activeTab === 'search'}
             iconF7="search"
             text="Search"
           />
