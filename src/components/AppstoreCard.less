@@ -7,39 +7,37 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
-
 .appstore-card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  @media (min-width: 768px) and (min-height: 670px) {
+    --card-grid-gap: 30px;
+    --cards-per-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--card-grid-gap);
+    row-gap: var(--card-grid-gap);
+    margin-left: calc(var(--f7-card-expandable-margin-horizontal) + var(--f7-safe-area-left));
+    margin-right: calc(var(--f7-card-expandable-margin-horizontal) + var(--f7-safe-area-right));
+    margin-top: var(--f7-card-expandable-margin-vertical);
+    margin-bottom: var(--card-grid-gap);
+    .appstore-card {
+      margin: 0;
+      // max-width: none;
+      width: 100%;
+    }
   }
-
   @media (min-width: 1024px) {
-    gap: 50px;
+    --card-grid-gap: 50px;
   }
-
   @media (min-width: 1500px) {
-    grid-template-columns: repeat(3, 1fr);
+    --card-grid-gap: 50px;
+    --cards-per-row: 3;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .appstore-card {
-    margin: 0;
-    width: 100%;
-  }
 }
-
 .appstore-card {
   height: 410px;
   max-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
   --f7-card-content-padding-horizontal: 20px;
   --f7-card-content-padding-vertical: 30px;
   --f7-card-expandable-font-size: 20px;
@@ -53,18 +51,15 @@
   @media (max-width: 767px), (max-height: 669px) {
     margin-top: 0;
   }
-
   @media (min-width: 768px) and (min-height: 670px) {
     --card-width: calc((100vw - var(--f7-safe-area-left) - var(--f7-safe-area-right) - var(--f7-card-expandable-margin-horizontal) * 2 - var(--card-grid-gap) * (var(--cards-per-row) - 1)) / var(--cards-per-row));
     --card-offset: calc(670px - var(--card-width));
-    
     .card-content {
       --f7-safe-area-left: 0px;
       --f7-safe-area-right: 0px;
       --f7-card-content-padding-horizontal: 35px;
     }
   }
-
   .theme-dark & {
     --f7-card-expandable-box-shadow: none;
   }
@@ -74,13 +69,11 @@
   &.card-transitioning {
     transition-duration: 300ms;
   }
-
   &.card-opening {
     .card-content {
       transition-duration: 350ms;
     }
   }
-
   &.card-closing {
     .card-content {
       transition-duration: 400ms;
@@ -97,6 +90,7 @@
     height: 410px;
     max-height: 100vh;
     position: relative;
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -115,18 +109,15 @@
       background-color: #ccc;
       transform: translateX(calc(-1 * var(--card-offset) / 2));
     }
-
     &-text {
       padding: 16px var(--f7-card-content-padding-horizontal);
       width: 100%;
       box-sizing: border-box;
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(0,0,0);
     }
-
-    &-text-top &-text {
+    &-text-top &-text{
       margin-bottom: auto;
     }
-
     .apps-table-list {
       padding: 16px var(--f7-card-content-padding-horizontal);
       display: block;
@@ -139,61 +130,50 @@
       z-index: 10;
       --f7-list-item-text-text-color: rgba(255, 255, 255, 0.55);
       --f7-list-item-padding-vertical: 0px;
-
       &-button {
         transform: translateX(calc(-1 * var(--card-offset)));
       }
-
       .button {
         --f7-button-bg-color: #fff;
       }
-
       ul {
         padding: 0;
         display: block;
         height: unset;
         flex-shrink: 0;
         max-width: none;
-
         &:after {
           display: none !important;
         }
       }
-
       li {
         max-width: none;
         width: auto;
         padding: 0;
         margin: 0;
       }
-
       &-title {
         margin-right: 20px;
         -webkit-line-clamp: 1;
         color: inherit;
       }
-
       &-button span,
       .item-text {
         color: inherit;
         opacity: 0.55;
       }
-
       &-image {
         width: 48px;
         height: 48px;
       }
     }
   }
-
-  &.card-opened,
-  &.card-opening {
+  &.card-opened, &.card-opening {
     .appstore-card-header .apps-table-list-button,
     .appstore-card-header > img {
       transform: translateX(0);
     }
   }
-
   &.card-opening,
   &.card-closing {
     .appstore-card-header .apps-table-list-button,
@@ -208,14 +188,12 @@
   &.card-opening .appstore-card-header-text-top .appstore-card-header-text {
     transform: translateY(var(--f7-safe-area-top));
   }
-
   &-subtitle {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     opacity: 0.55;
   }
-
   &-title {
     font-size: 28px;
     font-weight: bold;
@@ -226,50 +204,14 @@
   &-content {
     color: rgba(0, 0, 0, 0.55);
     font-weight: 500;
-
-    b,
-    strong,
-    em,
-    h1,
-    h2,
-    h3,
-    h4 {
+    b, strong, em, h1, h2, h3, h4 {
       color: #000;
     }
-
     .theme-dark & {
       color: rgba(240, 240, 255, 0.55);
-
-      b,
-      strong,
-      em,
-      h1,
-      h2,
-      h3,
-      h4 {
+      b, strong, em, h1, h2, h3, h4 {
         color: #fff;
       }
     }
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@media (max-width: 480px) {
-  .appstore-card-title {
-    font-size: 16px;
-  }
-  .appstore-card-subtitle {
-    font-size: 12px;
-  }
-  .appstore-card-content {
-    padding: 8px;
-  }
-  .appstore-card-header-text-top,
-  .appstore-card-header-text-bottom {
-    padding: 8px;
   }
 }
