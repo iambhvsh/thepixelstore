@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Block,
   Button,
@@ -7,15 +6,14 @@ import {
   List,
   ListItem,
 } from 'framework7-react';
-
 import { apps } from '../js/data';
-
 import AppstorePage from '../components/AppstorePage';
 import FeaturedApps from '../components/FeaturedApps';
 import AppsTableList from '../components/AppsTableList';
 import AppstoreBlockTitle from '../components/AppstoreBlockTitle';
+import './Apps.less'; // Assuming you have a less file for custom styles
 
-const Games = () => {
+const Apps = () => {
   const featuredApps = apps.filter((app) => !!app.featured);
   const usingNow = apps;
   const popularApps = [...apps]
@@ -56,40 +54,22 @@ const Games = () => {
         <Link>See All</Link>
       </AppstoreBlockTitle>
       <List className="categories-list safe-areas-inset" noChevron noHairlines>
-        <ListItem
-          title="Apple Watch Apps"
-          link="#"
-        >
+        <ListItem title="Apple Watch Apps" link="#">
           <span role="img" slot="media" aria-label="Apple Watch Apps">⌚</span>
         </ListItem>
-        <ListItem
-          title="Photo & Video"
-          link="#"
-        >
+        <ListItem title="Photo & Video" link="#">
           <span role="img" slot="media" aria-label="Photo & Video">📷</span>
         </ListItem>
-        <ListItem
-          title="Entertaiment"
-          link="#"
-        >
-          <span role="img" slot="media" aria-label="Entertaiment">🍿</span>
+        <ListItem title="Entertainment" link="#">
+          <span role="img" slot="media" aria-label="Entertainment">🍿</span>
         </ListItem>
-        <ListItem
-          title="Kids"
-          link="#"
-        >
+        <ListItem title="Kids" link="#">
           <span role="img" slot="media" aria-label="Kids">🎈</span>
         </ListItem>
-        <ListItem
-          title="Social Networking"
-          link="#"
-        >
+        <ListItem title="Social Networking" link="#">
           <span role="img" slot="media" aria-label="Social Networking">💬</span>
         </ListItem>
-        <ListItem
-          title="Lifestyle"
-          link="#"
-        >
+        <ListItem title="Lifestyle" link="#">
           <span role="img" slot="media" aria-label="Lifestyle">🛋️</span>
         </ListItem>
       </List>
@@ -103,22 +83,10 @@ const Games = () => {
         <Link>See All</Link>
       </AppstoreBlockTitle>
       <List className="quick-links-list safe-areas-inset" noChevron noHairlines>
-        <ListItem
-          title="About In-App Purchases"
-          link="#"
-        />
-        <ListItem
-          title="Parents' Guide to the App Store"
-          link="#"
-        />
-        <ListItem
-          title="About Apps & Games for You"
-          link="#"
-        />
-        <ListItem
-          title="About Personalisation"
-          link="#"
-        />
+        <ListItem title="About In-App Purchases" link="#" />
+        <ListItem title="Parents' Guide to the App Store" link="#" />
+        <ListItem title="About Apps & Games for You" link="#" />
+        <ListItem title="About Personalization" link="#" />
       </List>
 
       <Block className="buttons-list">
@@ -130,4 +98,4 @@ const Games = () => {
   );
 };
 
-export default Games;
+export default Apps;
