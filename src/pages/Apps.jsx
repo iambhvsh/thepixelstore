@@ -30,7 +30,7 @@ const Apps = () => {
 
   return (
     <AppstorePage title="Apps">
-      <FeaturedApps backText="Apps" apps={featuredApps} useIcon />
+      <FeaturedApps backText="Apps" apps={featuredApps} useThumbnail />
 
       <AppstoreBlockTitle title="Using Now">
         <Link>See All</Link>
