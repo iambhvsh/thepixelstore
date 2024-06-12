@@ -1,33 +1,36 @@
 [
   {
     "packageName": "com.openai.chatgpt",
-    "featured": "New update",
+    "featured": "NEW UPDATE",
     "title": "ChatGPT",
     "slug": "chatgpt",
     "subtitle": "The official app by OpenAI",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/5b/bc/8f5bbca7-555e-2c7a-df65-a4457a2056b4/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
-    "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips. This official app is free, syncs your history across devices, and brings you the newest model improvements from OpenAI.",
+    "icon": "chatgpt.jpg",
+    "thumbnail": "chatgptthumb.jpg",
+    "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n This official app is free, syncs your history across devices, and brings you the newest model improvements from OpenAI. \n With ChatGPT in your pocket, you’ll find: \n · Voice mode—tap the Headphones icon to speak on the go, request a bedtime story for your family, or settle a dinner table debate. \n · Creative inspiration—birthday gift ideas or help creating a personalized greeting card. \n · Tailored advice—help crafting a personalized response or talking through a tough situation. \n · Learning opportunities—help explaining electricity to a dinosaur loving kid or the ability to easily refamiliarize yourself with a historic event. \n · Professional input—a brainstorm partner for marketing copy or a business plan. \n · Instant answers—clarification whether the napkin goes on the right or the left of the plate or a recipe when you only have a few ingredients. \n Join hundreds of millions of users and try the app captivating the world. Download ChatGPT today. \n Terms of service & privacy policy: \n https://openai.com/policies/terms-of-use \n https://openai.com/policies/privacy-policy",
     "price": "$0.00",
-    "release_date": "2024-06-02T00:00:00",
-    "size": "79 MB",
+    "release_date": "2024-06-12T00:00:00",
+    "size": "24.4 MB",
     "promotionalText": "",
     "rating": 4.9,
     "developer": {
       "name": "OpenAI",
-      "id": 1684349733
+      "id": "1684349733"
     },
     "screenshots": [
-      "http://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/61/03/2561038d-60b1-f318-8d0f-eb5a64df8711/ba302e6a-2028-41bc-a36a-d3c90801f92f_6.5__1242x2688_1.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a9/62/1ba9620f-7676-ddb3-fc1e-29deee3cd0e3/834780f2-804d-406f-8ae6-22538bfe9be6_6.5__1242x2688_2.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/47/22/70472232-e765-21ce-f2af-dfb04a0a4d3a/e794bd07-1729-4e5f-adde-ec5c00be9d3d_6.5__1242x2688_3.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/a1/ad/69a1ad91-20e4-dcb5-eefa-9c408eee7949/cdffc351-3780-4090-86d7-c0f43999158d_6.5__1242x2688_4.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/f2/0c/d3f20c9f-f535-6dcd-437e-dc6730486355/952df720-ad90-4739-bf42-90ffaa5575dc_6.5__1242x2688_5.png/600x0w.webp"
+      "chatgpt-ss1.jpg",
+      "chatgpt-ss2.jpg",
+      "chatgpt-ss3.jpg",
+      "chatgpt-ss4.jpg",
+      "chatgpt-ss5.jpg",
+      "chatgpt-ss6.jpg",
+      "chatgpt-ss7.jpg"
     ],
     "versions": [
       {
         "version": "1.2024.157",
-        "release_date": "2024-02-22T00:00:00",
-        "release_notes": "It's easier than ever  to add a sound to your video."
+        "release_date": "2024-06-12T00:00:00",
+        "release_notes": "Bug fixes and small improvements."
       }
     ]
   },
@@ -38,6 +41,7 @@
     "slug": "youtube-watch-listen-stream",
     "subtitle": "Videos, Music and Live Streams",
     "icon": "youtube-watch-listen-stream-icon.jpg",
+    "thumbnail": "youtubethumb.jpg",
     "description": "Make watching your favorite videos easier with the YouTube app. Explore brand new content, music, news and more with the official YouTube app for iPhone and iPad.\n\nDiscover even more with the official YouTube app. Subscribe to channels with your favorite content, share them with friends or upload your very own videos for everyone to see.\n\nGet more out of your video streaming app and discover even more with YouTube.\n\nYOUTUBE FEATURES:\n\nDISCOVER BRAND NEW CONTENT\n- Browse YouTube’s personal recommendations on the home tab\n- Watch the hottest videos, from music to viral sensations on the trending tab\n- Like something? Tap like to save to your personal list or share with your friends!\n\nSTREAM MUSIC\n- Find the videos of the latest hits! \n- Watch fresh releases from popular and trending artists\n\nLIVE STREAMS & MORE\n- Get the latest news or watch your favorite popular live streams right on your device!\n\nLEARN FROM THE BEST\n- Practice and learn alongside the best online\n- Watch videos and learn any skill you need \n- Explore thousands of videos for makeup, DIY, tips and more!\n\nCONNECT AND SHARE\n- Let people know how you feel with likes, comments, or shares\n- Directly share your friends favorite videos with your friends\n- Make a playlist that saves your favorite videos\n- See the latest from the creators you follow on the subscriptions tab\n\nDownload the official YouTube app and start watching your favorite videos today!\n\nSUPPORT YOUR FAVORITE CREATORS WITH CHANNEL MEMBERSHIPS\n- Support the channel you love with monthly recurring payments\n- Stand out in comments and live chat with a loyalty badge next to your username\n- Get access to exclusive perks from the channel\n\nWITH YOUTUBE PREMIUM, GET YOUTUBE AD-FREE, OFFLINE, AND IN THE BACKGROUND.\n- Watch the videos you love without ads!\n- Play videos in the background, even when you open another app\n- Download videos for when you're low on data or can't get online\n\nIf you subscribe via iTunes:\n\nPayment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Account will be charged for renewal within 24 hours prior to the end of the current period at the rate of the selected plan. Subscriptions and auto-renewal may be managed by going to Account Settings after purchase\n\nAny unused portion of a free trial period will be forfeited when purchasing a subscription.\n\nMonthly price: $15.99\n\nYouTube paid service terms: https://www.youtube.com/t/terms_paidservice\nPrivacy policy: https://www.google.com/policies/privacy",
     "price": "$0.00",
     "release_date": "2012-09-11T00:00:00",
@@ -57,29 +61,9 @@
     ],
     "versions": [
       {
-        "version": "15.05.4",
-        "release_date": "2020-02-04T00:00:00",
+        "version": "19.23.33",
+        "release_date": "2024-06-09T00:00:00",
         "release_notes": "Bug fixes, stability improvements, repairs to time-space continuum, etc. etc."
-      },
-      {
-        "version": "15.05.5",
-        "release_date": "2020-02-06T00:00:00",
-        "release_notes": "Bug fixes, stability improvements, repairs to time-space continuum, etc. etc."
-      },
-      {
-        "version": "15.06",
-        "release_date": "2020-02-10T00:00:00",
-        "release_notes": "Fixed what needed fixing and squished some bugs."
-      },
-      {
-        "version": "15.08",
-        "release_date": "2020-02-24T00:00:00",
-        "release_notes": "Fixed bugs, improved performance, took out the garbage, mowed the front lawn, and now we need a little nap."
-      },
-      {
-        "version": "15.09",
-        "release_date": "2020-03-02T00:00:00",
-        "release_notes": "We fixed the tubes that bring you videos – and some bugs too."
       }
     ]
   },
@@ -90,10 +74,11 @@
     "slug": "instagram",
     "subtitle": "",
     "icon": "instagram-icon.jpg",
+    "thumbnail": "instagramthumb.jpg",
     "description": "Bringing you closer to the people and things you love. — Instagram from Facebook\n\nConnect with friends, share what you’re up to, or see what's new from others all over the world. Explore our community where you can feel free to be yourself and share everything from your daily moments to life's highlights.\n\nExpress Yourself and Connect With Friends\n\n- Add photos and videos to your story that disappear after 24 hours, and bring them to life with fun creative tools.\n- Message your friends in Direct. Start fun conversations about what you see on Feed and Stories.\n- Post photos and videos to your feed that you want to show on your profile.\n\nLearn More About Your Interests\n\n- Check out IGTV for longer videos from your favorite creators.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.",
     "price": "$0.00",
-    "release_date": "2010-10-06T00:00:00",
-    "size": "233 MB",
+    "release_date": "2024-06-11T00:00:00",
+    "size": "67.6 MB",
     "promotionalText": "",
     "rating": 4.8,
     "developer": {
@@ -109,29 +94,46 @@
     ],
     "versions": [
       {
-        "version": "127.0",
-        "release_date": "2020-02-03T00:00:00",
+        "version": "335.0.0.39.93",
+        "release_date": "2024-06-11T00:00:00",
         "release_notes": "The latest version contains bug fixes and performance improvements."
-      },
+      }
+    ]
+  },
+  {
+    "packageName": "com.picsart.studio.light",
+    "title": "PicsArt Light: Photo Editor + Collage",
+    "slug": "picsart-photo-editor-collage",
+    "subtitle": "Sticker, Pic & Video Maker",
+    "icon": "picsart-photo-editor-collage-icon.jpg",
+    "thumbail": "picsartthumb.jpg",
+    "description": "PicsArt is an all-in-one photo and video editor on mobile with impressive photo effects, drawing tools, image editor, collage maker, sticker maker, camera, photo filters, video editor, free image library, face editor with face swap, Beautify tools, and more! Unleash your creativity with the 14th most downloaded app worldwide in 2019 with over 700 million downloads to date. Start with your picture or one from our network and give it a crop, cut out, or grid.\n \nPicsArt is home to the hugely popular Sketch effect, Glitch effect, vintage filters, aesthetic stickers, and more. AND it's FREE!\n \nShow off your awesome pictures on Instagram with #picsart and you might be featured!\n\nPHOTO EDITOR\nThousands of amazing tools for cropping, stretching, and cloning. A full library of artistic photo filters (including HDR), frames, backgrounds, and borders. Use brush mode for fine-tuning and make double exposures using layers with adjustable transparency. 100+ fonts make it easy to add text to pictures and create memes.\n \nVIDEO EDITOR\nSome of our coolest photo features are now enabled for video. Bring your unique story to life by adding fun filters and stickers, then adjusting the size for social media. No professional experience required!\n \nREMOVE OBJECTS TOOL \nQuickly and easily remove any unwanted objects from any photo. Brush over the area you want gone and change the size of the brush as needed. Then let PicsArt work its magic. Use the Remove Tool on people, buildings, blemishes, lines, and more. \n \nREPLAY\nCut your editing time in half. Replay allows you to view editing steps (from start to finish) and easily apply them to your own image with just one tap per step. Each step is customizable to your liking. The PicsArt community adds hundreds of new Replays a day and recently added Replays are available to use at any time.\n \nREMIX AND FREE-TO-EDIT IMAGES\nPicsArt was the first to allow image remixing on mobile! Start with any photo with the #freetoedit hashtag, add a personal touch by editing it your way, then share back to the PicsArt community.\n \nSKETCH\nTake any selfie and create a sketch that looks hand drawn. The Sketch effect automatically detects the outline of your portrait and does the work for you. Change the background and line color to your liking. Five Sketch effects available.\n \nPICSART GOLD\nGo Gold! PicsArt’s Gold subscription gives you access to THOUSANDS OF PREMIUM STICKERS, FONTS, FRAMES, COLLAGES, AND MASKS! We’re adding NEW EXCLUSIVE content all the time. All of this with an ad-free editing experience. Get over $3,000 worth of content for a nominal monthly or annual subscription fee.\nStart your PicsArt Gold membership with a free trial. Limit one free trial per account. Once the trial is over, you’ll be charged a nominal subscription fee. Your Gold subscription will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period. If your subscription is subject to any promotional discount, the discount will expire upon the end of the current period and you’ll be charged the standard rate upon renewal. Go to your iTunes Account under subscriptions to manage your membership and to turn auto-renew off. Your iTunes Account will be charged when the purchase is confirmed. Read more about our terms and conditions here: https://picsart.com/terms-and-conditions\n \nFREE STICKERS & STICKER MAKER\nPicsArt’s Cutout Tool lets you create and share custom Stickers out of any picture. 5 million+ free user-made Stickers and clipart are already available in-app. Add Stickers to pictures (30+ Stickers per edit), remix others’ images, and share them via iMessage.\n \nCOLLAGE MAKER AND GRIDS\nPicsArt’s collage maker provides 100+ free, easy-to-use templates. Make grid-style, templated, or freestyle collages.\n \nDRAWING\nPicsArt Draw includes customizable brushes, layers, and professional drawing tools.\n\nAbout Ads: https://picsart.com/privacy-policy#interest-based",
+    "price": "$0.00",
+    "release_date": "2024-02-15T00:00:00",
+    "size": "136.8 MB",
+    "promotionalText": "Get your new go-to photo and video editor on mobile. Download to access highly popular Sketch Effects, Magic Effects, Beautify Tool, free Stickers, and more!",
+    "rating": 4.7,
+    "developer": {
+      "name": "PicsArt, Inc.",
+      "id": 587366038
+    },
+    "screenshots": [
+      "picsart-photo-editor-collage-1.jpg",
+      "picsart-photo-editor-collage-2.jpg",
+      "picsart-photo-editor-collage-3.jpg",
+      "picsart-photo-editor-collage-4.jpg",
+      "picsart-photo-editor-collage-5.jpg",
+      "picsart-photo-editor-collage-6.jpg",
+      "picsart-photo-editor-collage-7.jpg",
+      "picsart-photo-editor-collage-8.jpg",
+      "picsart-photo-editor-collage-9.jpg",
+      "picsart-photo-editor-collage-10.jpg"
+    ],
+    "versions": [
       {
-        "version": "128.0",
-        "release_date": "2020-02-10T00:00:00",
-        "release_notes": "The latest version contains bug fixes and performance improvements."
-      },
-      {
-        "version": "129.0",
-        "release_date": "2020-02-18T00:00:00",
-        "release_notes": "The latest version contains bug fixes and performance improvements."
-      },
-      {
-        "version": "130.0",
-        "release_date": "2020-02-24T00:00:00",
-        "release_notes": "The latest version contains bug fixes and performance improvements."
-      },
-      {
-        "version": "131.0",
-        "release_date": "2020-03-04T00:00:00",
-        "release_notes": "The latest version contains bug fixes and performance improvements."
+        "version": "24.3.2_lite",
+        "release_date": "2024-02-15T00:00:00",
+        "release_notes": "Get all snug and cozy next to a fireplace and enjoy our latest update. This one includes:\n• Collage support for Replay - now you can enable Replay for your collage edits. You can also apply other users’ Collage Replays to your own edits.\n• Blend Modes for Shape Mask - added all blending modes to the Shape Mask tool.\n• Bug fixes and improvements."
       }
     ]
   }
