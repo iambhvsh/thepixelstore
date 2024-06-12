@@ -1,0 +1,84 @@
+.appstore-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .appstore-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .appstore-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+.appstore-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.appstore-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appstore-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.appstore-card-content {
+  padding: 16px;
+}
+
+.appstore-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.appstore-card-title.large {
+  font-size: 24px;
+}
+
+.appstore-card-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.appstore-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.appstore-card h3 {
+  font-size: 16px;
+  margin: 16px 0 8px;
+}
+
+@media (max-width: 480px) {
+  .appstore-card-title {
+    font-size: 16px;
+  }
+  .appstore-card-subtitle {
+    font-size: 12px;
+  }
+  .appstore-card p {
+    font-size: 12px;
+  }
+  .appstore-card h3 {
+    font-size: 14px;
+  }
+}
