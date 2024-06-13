@@ -3,7 +3,7 @@ name: Firebase Hosting CI/CD
 on:
   push:
     branches:
-      - main  # adjust to your main branch name
+      - main  # Adjust to your main branch name
 
 jobs:
   build_and_deploy:
@@ -16,10 +16,11 @@ jobs:
       - name: Install webpack-dev-server and eslint globally
         run: |
           sudo npm install -g webpack-dev-server eslint
-
+      
       - name: Install swiper and other dependencies
         run: |
           npm install swiper
+
 
       - name: Build for production
         run: npm run build-prod
