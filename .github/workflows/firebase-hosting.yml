@@ -13,6 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Install cross-env
+        run: npm install cross-env
+
       - name: Install webpack-dev-server and eslint globally
         run: |
           sudo npm install -g webpack-dev-server eslint
