@@ -81,7 +81,7 @@ const AppDetails = ({ packageName, backText }) => {
           <div className="app-header-title">{app.title}</div>
           <div className="app-header-subtitle">{app.subtitle}</div>
           <div className="app-header-actions">
-            <Button external target="_blank" href={`https://apps.apple.com/app/id${app.id}`} round fill>GET</Button>
+            <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
             <Link iconF7="square_arrow_up" />
           </div>
           <div className="app-header-ratings">
