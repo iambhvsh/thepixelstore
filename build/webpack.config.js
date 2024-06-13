@@ -1,12 +1,10 @@
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
-
 const path = require('path');
 
 function resolvePath(dir) {
@@ -14,8 +12,6 @@ function resolvePath(dir) {
 }
 
 const env = process.env.NODE_ENV || 'development';
-const target = process.env.TARGET || 'web';
-
 
 module.exports = {
   mode: env,
@@ -24,20 +20,15 @@ module.exports = {
   },
   output: {
     path: resolvePath('www'),
-    hashDigestLength: 6,
     filename: 'js/[name].[hash].js',
     chunkFilename: 'js/[name].[chunkhash].js',
     publicPath: '',
-    hotUpdateChunkFilename: 'hot/hot-update.js',
-    hotUpdateMainFilename: 'hot/hot-update.json',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-
       '@': resolvePath('src'),
     },
-
   },
   devtool: env === 'production' ? 'source-map' : 'eval',
   devServer: {
@@ -45,7 +36,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    contentBase: '/www/',
+    contentBase: resolvePath('www'),
     disableHostCheck: true,
     historyApiFallback: true,
     watchOptions: {
@@ -53,12 +44,33 @@ module.exports = {
     },
   },
   optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true, // Remove console.* statements in production
+          },
+        },
+        extractComments: false,
+        sourceMap: env === 'development', // Enable source maps only in development
+      }),
+      new OptimizeCSSPlugin({
+        cssProcessorOptions: {
+          safe: true,
+          map: { inline: false },
+        },
+      }),
+    ],
     splitChunks: {
       chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          name: 'vendors',
+        },
+      },
     },
-    minimizer: [new TerserPlugin({
-      sourceMap: true,
-    })],
   },
   module: {
     rules: [
@@ -68,9 +80,7 @@ module.exports = {
         include: [
           resolvePath('src'),
           resolvePath('node_modules/framework7'),
-
           resolvePath('node_modules/framework7-react'),
-
           resolvePath('node_modules/template7'),
           resolvePath('node_modules/dom7'),
           resolvePath('node_modules/ssr-window'),
@@ -79,12 +89,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          (env === 'development' ? 'style-loader' : {
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
             },
-          }),
+          },
           'css-loader',
           'postcss-loader',
         ],
@@ -92,12 +102,12 @@ module.exports = {
       {
         test: /\.styl(us)?$/,
         use: [
-          (env === 'development' ? 'style-loader' : {
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
             },
-          }),
+          },
           'css-loader',
           'postcss-loader',
           'stylus-loader',
@@ -106,12 +116,12 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          (env === 'development' ? 'style-loader' : {
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
             },
-          }),
+          },
           'css-loader',
           'postcss-loader',
           'less-loader',
@@ -120,12 +130,12 @@ module.exports = {
       {
         test: /\.(sa|sc)ss$/,
         use: [
-          (env === 'development' ? 'style-loader' : {
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
             },
-          }),
+          },
           'css-loader',
           'postcss-loader',
           'sass-loader',
@@ -158,22 +168,11 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env),
-      'process.env.TARGET': JSON.stringify(target),
     }),
-
-    ...(env === 'production' ? [
-      new OptimizeCSSPlugin({
-        cssProcessorOptions: {
-          safe: true,
-          map: { inline: false },
-        },
-      }),
-      new webpack.optimize.ModuleConcatenationPlugin(),
-    ] : [
-      // Development only plugins
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NamedModulesPlugin(),
-    ]),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[hash].css',
+      chunkFilename: 'css/[name].[chunkhash].css',
+    }),
     new HtmlWebpackPlugin({
       filename: './index.html',
       template: './src/index.html',
@@ -187,25 +186,20 @@ module.exports = {
         useShortDoctype: true,
       } : false,
     }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash].css',
-      chunkFilename: 'css/[name].[chunkhash].css',
-    }),
     new CopyWebpackPlugin([
       {
         from: resolvePath('src/static'),
         to: resolvePath('www/static'),
+        ignore: ['*.jpg'], // Exclude large JPEG files from static copying
       },
       {
         from: resolvePath('src/manifest.json'),
         to: resolvePath('www/manifest.json'),
       },
     ]),
-
     new WorkboxPlugin.InjectManifest({
       swSrc: resolvePath('src/service-worker.js'),
       exclude: [
-        // eslint-disable-next-line
         /static\/apps-images\/[a-z\-]*[0-9]{1,}[a-z\.]*/,
         /\.map/,
         'static/.DS_Store',
