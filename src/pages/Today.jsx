@@ -18,7 +18,7 @@ const Today = () => {
   const yesterdayDateTitle = new Intl.DateTimeFormat('en', { weekday: 'long' }).format(yesterdayDate);
   const yesterdayDateHeading = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long' }).format(yesterdayDate);
 
-  const appCrossyRoad = games.find((app) => app.title === 'Crossy Road');
+  const appChatGpt = apps.find((app) => app.title === 'ChatGpt');
   const appNetflix = apps.find((app) => app.title === 'Netflix');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
   const appSevenSins = games.find((app) => app.title === 'The Seven Deadly Sins');
@@ -45,12 +45,12 @@ const Today = () => {
         </AppstoreCard>
 
         <AppstoreCard
-          image="static/apps-images/crossy-road-5.jpg"
-          title={(<span>GAME<br />OF THE<br />DAY</span>)}
+          image="https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg"
+          title={(<span>App<br />Of The<br />Day</span>)}
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
-          app={appCrossyRoad}
+          app={appChatGpt}
         >
           <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Quam corporis minima inventore? Quod unde ex fugiat itaque consequuntur, rem assumenda dolor beatae incidunt facere dolorem nobis repellat expedita sed ea?</p>
           <p>Ducimus, eveniet ea adipisci, impedit repellendus rem doloremque minima incidunt nihil cumque voluptatibus quos laudantium animi quibusdam odio molestias iusto delectus voluptatem! Totam laborum rem numquam temporibus possimus quae iure?</p>
