@@ -1,15 +1,16 @@
 @import url("../css/_mixins.less");
 
+/* Navbar Styles */
 .app-navbar {
-  backdrop-filter: blur(20px); /* Apply backdrop filter for blur effect */
-  background: transparent; /* Set background to transparent */
-  padding: 10px; /* Adjust padding as needed */
-  box-shadow: none; /* Remove any existing box shadow */
+  backdrop-filter: blur(20px);
+  background: transparent;
+  padding: 10px;
+  box-shadow: none;
 
   &-icon img {
     width: 28px;
     height: 28px;
-    border-radius: 22%; /* Adjust border radius if needed */
+    border-radius: 22%;
   }
 
   &-button {
@@ -54,7 +55,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex-shrink: 10;
+    flex-shrink: 1;
     min-width: 0;
   }
 
@@ -269,7 +270,7 @@
 
   &-votes {
     width: 100%;
-    flex-shrink: 10;
+    flex-shrink: 1;
     line-height: 10px;
     margin-top: 6px;
 
@@ -383,80 +384,4 @@
 .app-information-list {
   --f7-list-bg-color: transparent;
   --f7-list-item-title-text-color: rgba(0, 0, 0, 0.55);
-  --f7-list-item-after-text-color: #000;
-
-    .theme-dark & {
-    --f7-list-item-after-text-color: #fff;
-    --f7-list-item-title-text-color: rgba(255, 255, 255, 0.55);
-  }
-
-  .item-link {
-    --f7-list-item-title-text-color: var(--f7-theme-color);
-    --f7-list-item-after-text-color: var(--f7-theme-color);
-  }
-}
-
-/* Header Content Styles */
-.app-header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.app-header-content .app-header-title {
-  margin-bottom: 4px;
-}
-
-.app-header-content .app-header-subtitle {
-  margin-bottom: 16px;
-}
-
-.app-header-content .app-header-rating {
-  margin-bottom: 8px;
-}
-
-.app-header-content .app-header-actions {
-  display: flex;
-  align-items: center;
-}
-
-.app-header-content .app-header-actions .button {
-  min-width: 72px;
-  margin-right: 8px;
-}
-
-.app-header-content .app-header-actions .button:last-child {
-  margin-right: 0;
-}
-
-.app-header-content .app-header-actions .button {
-  color: white;
-  background: var(--f7-theme-color);
-}
-
-.app-header-content .app-header-actions .button.get-button {
-  background: #1f76ff;
-}
-
-.app-header-content .app-header-actions .button.purchase-button {
-  background: #f39e22;
-}
-
-.app-header-content .app-header-actions .button:not(.get-button):not(.purchase-button) {
-  color: var(--f7-theme-color);
-  background: #fff;
-}
-
-.app-header-actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: auto;
-
-  .button {
-    min-width: 72px;
-  }
-
-  @media (min-width: 768px) {
-    margin-bottom: auto;
-  }
-}
+  --f7-list-item
