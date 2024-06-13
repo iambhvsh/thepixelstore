@@ -27,14 +27,16 @@ const routes = [
   },
   {
     path: '/app/:packageName',
-    asyncComponent: () => import(/* webpackChunkName: "app-details" *//* webpackPreload: true */ '../pages/AppDetails'),
+    asyncComponent: () => import(/* webpackChunkName: "app-details" */ '../pages/AppDetails'),
   },
+  // Add the route for Account as a popup
   {
     path: '/account/',
     popup: {
-      asyncComponent: () => import(/* webpackChunkName: "account" *//* webpackPreload: true */ '../pages/Account'),
+      asyncComponent: () => import(/* webpackChunkName: "account" */ '../pages/Account'),
     },
   },
+  // Add a catch-all route for 404 page
   {
     path: '(.*)',
     asyncComponent: () => import(/* webpackChunkName: "404" */ '../pages/404'),
