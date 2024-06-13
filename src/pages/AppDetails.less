@@ -1,106 +1,126 @@
 @import url("../css/_mixins.less");
+
+/* Navbar Styles */
 .app-navbar {
-  &-icon {
-    img {
-      width: 28px;
-      height: 28px;
-      border-radius: 22%;
-    }
+  &-icon img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
   }
+
   &-button {
-    transition: 200ms;
+    transition: opacity 200ms;
     opacity: 0;
+
     .button {
       min-width: 72px;
     }
   }
+
   &.navbar-transparent-visible .app-navbar-button {
     opacity: 1;
   }
 }
+
+/* Header Styles */
 .app-header {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   margin-top: 0;
+
   &-icon {
     width: 118px;
     height: 118px;
-    border-radius: 22%;
+    border-radius: 50%;
     margin-right: var(--f7-block-padding-horizontal);
     flex-shrink: 0;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
     .theme-dark & {
-      border: 1px solid rgba(255,255,255,0.1);
+      border-color: rgba(255, 255, 255, 0.1);
     }
+
     @media (min-width: 768px) {
       width: 191px;
       height: 191px;
     }
   }
+
   &-content {
+    flex: 1;
+    padding-left: 20px; /* Adjust as needed */
     display: flex;
     flex-direction: column;
-    width: 100%;
-    flex-shrink: 10;
-    min-width: 0;
   }
+
   &-title {
     font-size: 22px;
     font-weight: 600;
+
     @media (min-width: 768px) {
       font-size: 27px;
     }
   }
+
   &-subtitle {
     font-size: 16px;
     opacity: 0.55;
+
     @media (min-width: 768px) {
       font-size: 20px;
     }
   }
+
   &-actions {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+
     .button {
       min-width: 72px;
     }
+
     @media (min-width: 768px) {
       margin-bottom: auto;
     }
   }
+
   &-rating {
     display: flex;
-    flex-wrap: wrap;
-    opacity: 0.55;
     align-items: center;
+    opacity: 0.55;
     position: relative;
+    margin-top: 8px; /* Adjust margin as needed */
+
     &-value {
       font-size: 22px;
       font-weight: bold;
       margin-right: 4px;
     }
+
     .rating-stars .f7-icons {
       font-size: 18px;
+      color: var(--f7-color-orange); /* Adjust color as needed */
     }
+
     &-sub {
       position: absolute;
-      left: 0;
       top: 100%;
       font-size: 12px;
       opacity: 0.75;
+      left: 0;
+
       @media (min-width: 768px) {
         position: static;
-        margin-left: 16px;
+        margin-left: 16px; /* Adjust margin as needed */
         font-size: 14px;
-        width: 100%;
-        margin-left: 0;
       }
     }
-
   }
+
   @media (max-width: 767px) {
     margin-bottom: calc(var(--f7-block-margin-vertical) + 30px + 16px);
+
     &-ratings {
       margin-top: 16px;
       margin-bottom: -46px;
@@ -108,79 +128,73 @@
     }
   }
 }
+
+/* Screenshots Styles */
 .app-screenshots {
-  overflow: auto;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
   white-space: nowrap;
-  font-size: 0;
-  scroll-padding-left: calc(20px + var(--f7-safe-area-left));
+  font-size: 0; /* Prevent whitespace gap */
+  scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
-    opacity: 0;
   }
+
   img {
     width: 220px;
-    border-radius: 22px;
-    scroll-snap-align: start start;
+    height: 400px; /* Adjust height as needed */
+    border-radius: 16px; /* Adjust border radius as needed */
+    scroll-snap-align: start;
     margin-right: 10px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Fallback background color */
+    
     .theme-dark & {
       background-color: #111;
     }
+
     @media (min-width: 768px) {
       margin-right: 24px;
     }
   }
-  &:after {
-    content: '';
-    width: 1px;
-    height: 1px;
-    flex-shrink: 0;
-  }
 }
+
+/* Description Styles */
 .app-description {
   font-size: 15px;
+
   &-content {
     position: relative;
     padding-top: 16px;
-    .hairline(top, var(--f7-block-strong-border-color));
-  }
-  .link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    &.active-state {
-      opacity: 1;
-    }
-    &:before {
+
+    &:after {
       content: '';
       position: absolute;
+      bottom: 0;
       right: 0;
-      top: 0;
-      height: 100%;
-      width: 200%;
-      background-image: linear-gradient(to left, #fff 50%, rgba(255, 255, 255 ,0));
-      z-index: -1;
-      .theme-dark & {
-        background-image: linear-gradient(to left, #000 50%, rgba(0, 0, 0 ,0));
-      }
+      width: 100%;
+      height: 1px; /* Adjust underline height as needed */
+      background: linear-gradient(to right, transparent, var(--f7-block-strong-border-color)); /* Adjust gradient colors as needed */
     }
   }
+
   &-text {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  &-full &-text {
-    display: block;
-    animation: app-description-fade-in 600ms;
-  }
-  &-full .link {
-    display: none;
+
+  &-full {
+    &-text {
+      display: block;
+      animation: app-description-fade-in 600ms;
+    }
+
+    .link {
+      display: none;
+    }
   }
 }
 
@@ -193,129 +207,189 @@
   }
 }
 
+/* Ratings Styles */
 .app-ratings {
   display: flex;
-  margin-bottom: 0;
+  align-items: center;
+  margin-bottom: 16px; /* Adjust margin as needed */
+
   &-number {
-    line-height: 1;
-    text-align: center;
     font-weight: bold;
-    flex-shrink: 0;
-    b, span {
-      display: block;
-    }
+    font-size: 28px;
+    line-height: 1;
+
     b {
-      font-size: 60px;
-      letter-spacing: -0.05em;
+      display: block;
+      font-size: 60px; /* Adjust font size as needed */
       font-weight: 800;
+      letter-spacing: -0.05em; /* Adjust letter spacing as needed */
     }
+
     span {
-      font-size: 15px;
+      display: block;
+      font-size: 14px; /* Adjust font size as needed */
       opacity: 0.55;
     }
   }
+
   &-votes {
-    width: 100%;
-    flex-shrink: 10;
-    line-height: 10px;
-    margin-top: 6px;
+    flex: 1;
+    text-align: right;
+    font-size: 14px; /* Adjust font size as needed */
+    opacity: 0.55;
+    margin-left: 12px; /* Adjust margin as needed */
+
     i {
-      font-size: 8px;
+      font-size: 12px; /* Adjust font size as needed */
       opacity: 0.55;
     }
-    &-row {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
+
     &-progress {
       width: 70%;
-      height: 2px;
-      background: rgba(0,0,0,0.17);
+      height: 2px; /* Adjust height as needed */
+      background: rgba(0, 0, 0, 0.17); /* Adjust background color as needed */
       border-radius: 2px;
-      margin-left: 10px;
+
       span {
-        background: rgba(0,0,0,0.55);
         display: block;
-        height: 2px;
+        height: 2px; /* Adjust height as needed */
+        background: rgba(0, 0, 0, 0.55); /* Adjust background color as needed */
         border-radius: 2px;
       }
+
       .theme-dark & {
-        background: rgba(255,255,255,0.17);
+        background: rgba(255, 255, 255, 0.17); /* Adjust dark mode background color as needed */
+
         span {
-          background: rgba(255,255,255,0.55);
+          background: rgba(255, 255, 255, 0.55); /* Adjust dark mode background color as needed */
         }
       }
     }
-    &-total {
-      text-align: right;
-      opacity: 0.55;
-      margin-top: 4px;
-    }
   }
 }
+
+/* Reviews Styles */
 .app-reviews {
   margin-top: 16px;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  display: flex;
-  overflow: auto;
+  white-space: nowrap;
+  font-size: 0; /* Prevent whitespace gap */
+
   &::-webkit-scrollbar {
     display: none;
-    opacity: 0;
   }
-  @media (min-width: 768px) {
-    scroll-padding-left: calc(20px + var(--f7-safe-area-left));
-  }
-  &:after {
-    content: '';
-    flex-shrink: 0;
-    width: 1px;
-    height: 1px;
-  }
+
   .app-review {
     border-radius: 10px;
-    background: var(--f7-block-strong-bg-color);
+    background-color: var(--f7-block-strong-bg-color); /* Adjust background color as needed */
     padding: 16px;
-    scroll-snap-align: center center;
-    width: 100%;
-    max-width: 350px;
-    margin-right: 10px;
+    margin-right: 16px; /* Adjust margin as needed */
     flex-shrink: 0;
-    box-sizing: border-box;
-    html:not(.theme-dark) & {
-      background-color: #F2F2F6;
-    }
-    @media (min-width: 768px) {
-      margin-right: 24px;
-      scroll-snap-align: start start;
-    }
-    &-header {
+
+    .app-review-header {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+
       span:last-child {
         opacity: 0.55;
       }
+
       .rating-stars .f7-icons {
-        font-size: 12px;
-        color: var(--f7-color-orange);
+        font-size: 18px; /* Adjust font size as needed */
+        color: var(--f7-color-orange); /* Adjust color as needed */
       }
     }
-    &-text {
+
+    .app-review-text {
       margin-top: 16px;
     }
   }
 }
+
+/* Information List Styles */
 .app-information-list {
   --f7-list-bg-color: transparent;
-  --f7-list-item-title-text-color: rgba(0,0,0,0.55);
+  --f7-list-item-title-text-color: rgba(0, 0, 0, 0.55);
   --f7-list-item-after-text-color: #000;
+
   .theme-dark & {
     --f7-list-item-after-text-color: #fff;
-    --f7-list-item-title-text-color: rgba(255,255,255,0.55);
+    --f7-list-item-title-text-color: rgba(255, 255, 255, 0.55);
   }
+
   .item-link {
     --f7-list-item-title-text-color: var(--f7-theme-color);
     --f7-list-item-after-text-color: var(--f7-theme-color);
+  }
+}
+
+/* Footer Styles (Optional) */
+.app-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--f7-block-bg-color); /* Adjust background color as needed */
+  color: var(--f7-block-color); /* Adjust text color as needed */
+
+  .app-footer-link {
+    color: var(--f7-link-color); /* Adjust link color as needed */
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/* Custom Media Queries */
+@media (min-width: 1024px) {
+  .app-header {
+        &-icon {
+      width: 191px;
+      height: 191px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .app-header {
+      &-icon {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+
+  .app-screenshots {
+    img {
+      width: 220px;
+      height: 400px;
+      border-radius: 16px;
+      margin-right: 16px;
+
+      @media (min-width: 768px) {
+        width: 280px;
+        height: 500px;
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .app-description {
+    &-content {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .app-reviews {
+    .app-review {
+      max-width: 400px;
+
+      @media (min-width: 768px) {
+        max-width: 450px;
+      }
+    }
   }
 }
