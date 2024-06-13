@@ -7,11 +7,10 @@
     "subtitle": "The official app by OpenAI",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/5b/bc/8f5bbca7-555e-2c7a-df65-a4457a2056b4/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
     "thumbnail": "https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg",
-    "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n\n This official app is free, syncs your history across devices, and brings you the newest model improvements from OpenAI. \n\n With ChatGPT in your pocket, you’ll find: \n\n · Voice mode—tap the Headphones icon to speak on the go, request a bedtime story for your family, or settle a dinner table debate. \n · Creative inspiration—birthday gift ideas or help creating a personalized greeting card. \n · Tailored advice—help crafting a personalized response or talking through a tough situation. \n · Learning opportunities—help explaining electricity to a dinosaur loving kid or the ability to easily refamiliarize yourself with a historic event. \n · Professional input—a brainstorm partner for marketing copy or a business plan. \n · Instant answers—clarification whether the napkin goes on the right or the left of the plate or a recipe when you only have a few ingredients. \n Join hundreds of millions of users and try the app captivating the world. Download ChatGPT today. \n Terms of service & privacy policy: \n https://openai.com/policies/terms-of-use \n https://openai.com/policies/privacy-policy",
+    "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n\nThis official app is free, syncs your history across devices, and brings you the newest model improvements from OpenAI. \n\nWith ChatGPT in your pocket, you’ll find:\n\n· Voice mode—tap the Headphones icon to speak on the go, request a bedtime story for your family, or settle a dinner table debate.\n· Creative inspiration—birthday gift ideas or help creating a personalized greeting card.\n· Tailored advice—help crafting a personalized response or talking through a tough situation.\n· Learning opportunities—help explaining electricity to a dinosaur-loving kid or the ability to easily refamiliarize yourself with a historic event.\n· Professional input—a brainstorm partner for marketing copy or a business plan.\n· Instant answers—clarification whether the napkin goes on the right or the left of the plate or a recipe when you only have a few ingredients.\n\nJoin hundreds of millions of users and try the app captivating the world. Download ChatGPT today.\n\nTerms of service & privacy policy:\nhttps://openai.com/policies/terms-of-use\nhttps://openai.com/policies/privacy-policy",
     "price": "$0.00",
     "release_date": "2024-06-12T00:00:00",
     "size": "24.4 MB",
-    "promotionalText": "",
     "rating": 4.9,
     "totalRatings": "2.5M",
     "developer": {
@@ -19,151 +18,26 @@
       "id": "1684349733"
     },
     "screenshots": [
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/61/03/2561038d-60b1-f318-8d0f-eb5a64df8711/ba302e6a-2028-41bc-a36a-d3c90801f92f_6.5__1242x2688_1.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a9/62/1ba9620f-7676-ddb3-fc1e-29deee3cd0e3/834780f2-804d-406f-8ae6-22538bfe9be6_6.5__1242x2688_2.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/47/22/70472232-e765-21ce-f2af-dfb04a0a4d3a/e794bd07-1729-4e5f-adde-ec5c00be9d3d_6.5__1242x2688_3.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/a1/ad/69a1ad91-20e4-dcb5-eefa-9c408eee7949/cdffc351-3780-4090-86d7-c0f43999158d_6.5__1242x2688_4.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/56/40/475640ca-ece2-8471-b270-b97bf182b092/cc401e77-d3f5-4e17-9bd1-f1eead601eab_6.5__1242x2688_6.png/600x0w.webp"
-  ],
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/61/03/2561038d-60b1-f318-8d0f-eb5a64df8711/ba302e6a-2028-41bc-a36a-d3c90801f92f_6.5__1242x2688_1.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a9/62/1ba9620f-7676-ddb3-fc1e-29deee3cd0e3/834780f2-804d-406f-8ae6-22538bfe9be6_6.5__1242x2688_2.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/47/22/70472232-e765-21ce-f2af-dfb04a0a4d3a/e794bd07-1729-4e5f-adde-ec5c00be9d3d_6.5__1242x2688_3.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/a1/ad/69a1ad91-20e4-dcb5-eefa-9c408eee7949/cdffc351-3780-4090-86d7-c0f43999158d_6.5__1242x2688_4.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/56/40/475640ca-ece2-8471-b270-b97bf182b092/cc401e77-d3f5-4e17-9bd1-f1eead601eab_6.5__1242x2688_6.png/600x0w.webp"
+    ],
     "versions": [
       {
         "version": "1.2024.157",
         "release_date": "2024-06-12T00:00:00",
         "release_notes": "Bug fixes and small improvements."
-    }
-  ],
+      }
+    ],
     "reviews": [
       {
         "author": "Sarah",
         "date": "3d ago",
         "rating": 5,
         "comment": "ChatGPT is amazing! It helps me with my studies and provides quick answers to my questions."
-    }
-  ]
-},
-  {
-    "packageName": "com.google.android.youtube",
-    "featured": "New update",
-    "title": "YouTube: Watch, Listen, Stream",
-    "slug": "youtube-watch-listen-stream",
-    "subtitle": "Videos, Music and Live Streams",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0f/c1/79/0fc179d6-7b55-a522-ee58-ade13fa3c0f9/logo_youtube_color-1x_U007emarketing-0-6-0-0-85-220-0.png/492x0w.webp",
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQark5NoC2-pK418pUOKf_eV2jg0U8M0Wsby3XZONawJXKS0y4PLRc_yXfo&s=10",
-    "description": "Make watching your favorite videos easier with the YouTube app. Explore brand new content, music, news and more with the official YouTube app for iPhone and iPad.\n\nDiscover even more with the official YouTube app. Subscribe to channels with your favorite content, share them with friends or upload your very own videos for everyone to see.\n\nGet more out of your video streaming app and discover even more with YouTube.\n\nYOUTUBE FEATURES:\n\nDISCOVER BRAND NEW CONTENT\n- Browse YouTube’s personal recommendations on the home tab\n- Watch the hottest videos, from music to viral sensations on the trending tab\n- Like something? Tap like to save to your personal list or share with your friends!\n\nSTREAM MUSIC\n- Find the videos of the latest hits! \n- Watch fresh releases from popular and trending artists\n\nLIVE STREAMS & MORE\n- Get the latest news or watch your favorite popular live streams right on your device!\n\nLEARN FROM THE BEST\n- Practice and learn alongside the best online\n- Watch videos and learn any skill you need \n- Explore thousands of videos for makeup, DIY, tips and more!\n\nCONNECT AND SHARE\n- Let people know how you feel with likes, comments, or shares\n- Directly share your friends favorite videos with your friends\n- Make a playlist that saves your favorite videos\n- See the latest from the creators you follow on the subscriptions tab\n\nDownload the official YouTube app and start watching your favorite videos today!\n\nSUPPORT YOUR FAVORITE CREATORS WITH CHANNEL MEMBERSHIPS\n- Support the channel you love with monthly recurring payments\n- Stand out in comments and live chat with a loyalty badge next to your username\n- Get access to exclusive perks from the channel\n\nWITH YOUTUBE PREMIUM, GET YOUTUBE AD-FREE, OFFLINE, AND IN THE BACKGROUND.\n- Watch the videos you love without ads!\n- Play videos in the background, even when you open another app\n- Download videos for when you're low on data or can't get online\n\nIf you subscribe via iTunes:\n\nPayment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Account will be charged for renewal within 24 hours prior to the end of the current period at the rate of the selected plan. Subscriptions and auto-renewal may be managed by going to Account Settings after purchase\n\nAny unused portion of a free trial period will be forfeited when purchasing a subscription.\n\nMonthly price: $15.99\n\nYouTube paid service terms: https://www.youtube.com/t/terms_paidservice\nPrivacy policy: https://www.google.com/policies/privacy",
-    "price": "$0.00",
-    "release_date": "2012-09-11T00:00:00",
-    "size": "175 MB",
-    "promotionalText": "",
-    "rating": 4.7,
-    "totalRatings": "566K",
-    "developer": {
-      "name": "Google LLC",
-      "id": 281956209
-    },
-    "screenshots": [
-    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c0/14/f8/c014f89b-973d-2486-192a-dc9b4d12f370/7a94f703-7c3e-4789-9bd7-ce80045fe7b6_iOS-6.5-in_1.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/aa/ab/d9/aaabd92f-65f7-5a99-8fac-af004efd044a/9bde600a-9d57-41c4-830b-3261fee4a323_iOS-6.5-in_2.jpg/600x0w.webp",
-    "http://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bf/15/2f/bf152f19-34f8-7760-30cc-84c2547b4c75/634cb861-844f-4310-9dca-1d395031a99e_iOS-6.5-in_3.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/eb/81/e0/eb81e09e-7da6-5160-caa8-d3b47cd1ff46/8d366307-dd64-45f4-8cf3-d45be7dec00d_iOS-6.5-in_4.jpg/600x0w.webp",
-    "http://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6d/b5/b3/6db5b38d-065a-7823-734e-a3a1b2ecf3f1/84bdc830-e257-413c-b355-024445f557e5_iOS-6.5-in_5.jpg/600x0w.webp"
-  ],
-    "versions": [
-      {
-        "version": "19.23.33",
-        "release_date": "2024-06-09T00:00:00",
-        "release_notes": "Bug fixes, stability improvements, repairs to time-space continuum, etc. etc."
-    }
-  ],
-    "reviews": [
-      {
-        "author": "David",
-        "date": "5d ago",
-        "rating": 4,
-        "comment": "YouTube is great for finding music videos and keeping up with my favorite channels. It's easy to use and has a vast library of content."
-    }
-  ]
-},
-{
-  "packageName": "com.instagram.android",
-  "featured": "New update",
-  "title": "Instagram",
-  "slug": "instagram",
-  "subtitle": "",
-  "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/cb/4a/40cb4aef-d786-a779-145d-137f354beb4c/Prod-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
-  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1Ar3ocxArRBBet84T0MScqJbpOmvb0TsTg&usqp=CAU",
-  "description": "Bringing you closer to the people and things you love. — Instagram from Facebook\n\nConnect with friends, share what you’re up to, or see what's new from others all over the world. Explore our community where you can feel free to be yourself and share everything from your daily moments to life's highlights.\n\nExpress Yourself and Connect With Friends\n\n- Add photos and videos to your story that disappear after 24 hours, and bring them to life with fun creative tools.\n- Message your friends in Direct. Start fun conversations about what you see on Feed and Stories.\n- Post photos and videos to your feed that you want to show on your profile.\n\nLearn More About Your Interests\n\n- Check out IGTV for longer videos from your favorite creators.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.",
-  "price": "$0.00",
-  "release_date": "2024-06-11T00:00:00",
-  "size": "67.6 MB",
-  "promotionalText": "",
-  "rating": 4.8,
-  "totalRatings": "3.6B",
-  "developer": {
-    "name": "Instagram, Inc.",
-    "id": 389801255
-  },
-  "screenshots": [
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/d4/e9/27d4e967-76c4-2376-b806-21bf9768377f/9812d4ae-38c2-45ce-8818-d523b841b5e0_3_iOS_6.7.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/80/36/ff8036ef-d2ef-e925-66fd-f04537886abf/544105ea-d501-40ab-ada8-ef4c61d0e570_4_iOS_6.7.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/75/32/b97532ca-9154-c5f1-3dab-2c2cb38b0290/0fd3257d-2288-46c9-8dd2-2572f3f9c5d3_6_iOS_6.7.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/7c/7c/e77c7c9b-fd0b-5901-fc13-16940cd79c31/6d1c1189-0f7a-47e6-8e58-5463935e3fdc_5_iOS_6.7.jpg/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/ee/72/91ee7215-c9f1-f382-a8f4-10b2c01d42ba/c556b652-5cf7-4c3d-8cfe-b972766129b0_2_iOS_6.7.jpg/600x0w.webp"
-  ],
-  "versions": [
-    {
-      "version": "335.0.0.39.93",
-      "release_date": "2024-06-11T00:00:00",
-      "release_notes": "The latest version contains bug fixes and performance improvements."
-    }
-  ],
-  "reviews": [
-    {
-      "author": "Emily",
-      "date": "2w ago",
-      "rating": 5,
-      "comment": "Instagram is my go-to app for staying connected with friends and sharing special moments. The new update runs smoothly and I love the new features!"
-    }
-  ]
-},
-  {
-    "packageName": "com.picsart.studio.light",
-    "title": "PicsArt Light: Photo Editor + Collage",
-    "slug": "picsart-photo-editor-collage",
-    "subtitle": "Sticker, Pic & Video Maker",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d7/b4/8c/d7b48cfd-53a3-8d11-424f-cadb78b1527a/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/492x0w.webp",
-    "thumbnail": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*-X-jrUTZ_nQRMTVHXCSQMg.jpeg",
-    "description": "PicsArt is an all-in-one photo and video editor on mobile with impressive photo effects, drawing tools, image editor, collage maker, sticker maker, camera, photo filters, video editor, free image library, face editor with face swap, Beautify tools, and more! Unleash your creativity with the 14th most downloaded app worldwide in 2019 with over 700 million downloads to date. Start with your picture or one from our network and give it a crop, cut out, or grid.\n \nPicsArt is home to the hugely popular Sketch effect, Glitch effect, vintage filters, aesthetic stickers, and more. AND it's FREE!\n \nShow off your awesome pictures on Instagram with #picsart and you might be featured!\n\nPHOTO EDITOR\nThousands of amazing tools for cropping, stretching, and cloning. A full library of artistic photo filters (including HDR), frames, backgrounds, and borders. Use brush mode for fine-tuning and make double exposures using layers with adjustable transparency. 100+ fonts make it easy to add text to pictures and create memes.\n \nVIDEO EDITOR\nSome of our coolest photo features are now enabled for video. Bring your unique story to life by adding fun filters and stickers, then adjusting the size for social media. No professional experience required!\n \nREMOVE OBJECTS TOOL \nQuickly and easily remove any unwanted objects from any photo. Brush over the area you want gone and change the size of the brush as needed. Then let PicsArt work its magic. Use the Remove Tool on people, buildings, blemishes, lines, and more. \n \nREPLAY\nCut your editing time in half. Replay allows you to view editing steps (from start to finish) and easily apply them to your own image with just one tap per step. Each step is customizable to your liking. The PicsArt community adds hundreds of new Replays a day and recently added Replays are available to use at any time.\n \nREMIX AND FREE-TO-EDIT IMAGES\nPicsArt was the first to allow image remixing on mobile! Start with any photo with the #freetoedit hashtag, add a personal touch by editing it your way, then share back to the PicsArt community.\n \nSKETCH\nTake any selfie and create a sketch that looks hand drawn. The Sketch effect automatically detects the outline of your portrait and does the work for you. Change the background and line color to your liking. Five Sketch effects available.\n \nPICSART GOLD\nGo Gold! PicsArt’s Gold subscription gives you access to THOUSANDS OF PREMIUM STICKERS, FONTS, FRAMES, COLLAGES, AND MASKS! We’re adding NEW EXCLUSIVE content all the time. All of this with an ad-free editing experience. Get over $3,000 worth of content for a nominal monthly or annual subscription fee.\nStart your PicsArt Gold membership with a free trial. Limit one free trial per account. Once the trial is over, you’ll be charged a nominal subscription fee. Your Gold subscription will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period. If your subscription is subject to any promotional discount, the discount will expire upon the end of the current period and you’ll be charged the standard rate upon renewal. Go to your iTunes Account under subscriptions to manage your membership and to turn auto-renew off. Your iTunes Account will be charged when the purchase is confirmed. Read more about our terms and conditions here: https://picsart.com/terms-and-conditions\n \nFREE STICKERS & STICKER MAKER\nPicsArt’s Cutout Tool lets you create and share custom Stickers out of any picture. 5 million+ free user-made Stickers and clipart are already available in-app. Add Stickers to pictures (30+ Stickers per edit), remix others’ images, and share them via iMessage.\n \nCOLLAGE MAKER AND GRIDS\nPicsArt’s collage maker provides 100+ free, easy-to-use templates. Make grid-style, templated, or freestyle collages.\n \nDRAWING\nPicsArt Draw includes customizable brushes, layers, and professional drawing tools.\n\nAbout Ads: https://picsart.com/privacy-policy#interest-based",
-    "price": "$0.00",
-    "release_date": "2024-02-15T00:00:00",
-    "size": "136.8 MB",
-    "promotionalText": "Get your new go-to photo and video editor on mobile. Download to access highly popular Sketch Effects, Magic Effects, Beautify Tool, free Stickers, and more!",
-    "rating": 4.7,
-    "totalRatings": "96K",
-    "developer": {
-      "name": "PicsArt, Inc.",
-      "id": 587366038
-    },
-    "screenshots": [
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/88/93/608893c8-faea-0393-ccc4-b3fdeaa523cb/86c528d0-5e97-4bab-84c8-211144fc813e_1._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b9/b3/f5b9b39d-feb4-5e81-cabf-34af04c06601/c0e9aa26-edb9-4368-9158-096194a61b08_2._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e9/4f/12/e94f129a-e80a-e512-c57d-4df87dd85709/5b0a033b-0902-409f-b2da-9ee714f65a6d_3._AI_BG___iPhone_6.5_.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/17/6a/75176aeb-a548-b251-4fb3-2a3623082a22/3fb4899d-b1d5-4cc5-969b-55252e75851c_4._Remove_BG___iPhone_6.5_.png/600x0w.webp",
-    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/9b/65/3b9b65cc-3e42-5d8d-1018-cacfa1898db5/ee3b2a80-551b-481b-947a-5f42cff12ab2_5._Templates___iPhone_6.5_.png/600x0w.webp"
-  ],
-    "versions": [
-      {
-        "version": "24.3.2_lite",
-        "release_date": "2024-02-15T00:00:00",
-        "release_notes": "Get all snug and cozy next to a fireplace and enjoy our latest update. This one includes:\n• Collage support for Replay - now you can enable Replay for your collage edits. You can also apply other users’ Collage Replays to your own edits.\n• Blend Modes for Shape Mask - added all blending modes to the Shape Mask tool.\n• Bug fixes and improvements."
-    }
-  ],
-    "reviews": [
-      {
-        "author": "Samantha",
-        "date": "3d ago",
-        "rating": 4,
-        "comment": "I love using PicsArt to edit my photos! The tools are easy to use, and I can create stunning collages and edits effortlessly."
-    }
-  ]
-}
+      }
+    ]
+  }
 ]
