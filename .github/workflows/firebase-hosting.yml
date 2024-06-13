@@ -3,7 +3,7 @@ name: Firebase Hosting CI/CD
 on:
   push:
     branches:
-      - main
+      - main  # adjust to your main branch name
 
 jobs:
   build_and_deploy:
@@ -13,13 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # Use Node.js v14 LTS
+      - name: Install webpack-dev-server and eslint globally
+        run: |
+          sudo npm install -g webpack-dev-server eslint
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install swiper and other dependencies
+        run: |
+          npm install swiper
 
       - name: Build for production
         run: npm run build-prod
@@ -28,5 +28,5 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          npm install -g firebase-tools
+          sudo npm install -g firebase-tools
           firebase deploy --only hosting --token "1//0gmT53vjFvtb6CgYIARAAGBASNwF-L9IrbhHWdzUxfVUNqLHPC7dD_U6cPS0jGVtqD64bCIH0wAGsSPXSQgignh-tCW2AuMKWOnY"
