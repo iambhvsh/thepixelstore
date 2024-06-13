@@ -100,7 +100,7 @@
     "start": "NODE_OPTIONS=--openssl-legacy-provider npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js",
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
-    "build-prod": "cross-env NODE_ENV=production node ./build/build.js",
+    "build-prod": "NODE_ENV=production node ./build/build.js",
     "lint": "eslint --ext .js,.jsx ./src"
   },
   "browserslist": [
