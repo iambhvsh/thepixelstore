@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 
-const ScreenshotThumb = ({ src, onClick, alt }) => {
+const Screenshots = ({ src, onClick, alt }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -20,4 +20,4 @@ const ScreenshotThumb = ({ src, onClick, alt }) => {
   );
 };
 
-export default ScreenshotThumb;
+export default Screenshots;

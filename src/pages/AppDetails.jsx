@@ -12,7 +12,7 @@ import {
 
 import RatingStars from '../components/RatingStars';
 import AppstoreBlockTitle from '../components/AppstoreBlockTitle';
-import ScrenshotThumb from '../components/ScreenshotThumb';
+import Screenshots from '../components/Screenshots';
 
 import { apps, games } from '../js/data';
 
@@ -94,8 +94,8 @@ const AppDetails = ({ packageName, backText }) => {
         </div>
       </div>
       <div className="block app-screenshots">
-        {app.screenshotsThumbs.map((screenshot, index) => (
-          <ScrenshotThumb
+        {app.screenshots.map((screenshot, index) => (
+          <Screenshots
             onClick={() => openPhotoBrowser(index)}
             src={screenshot}
             key={index}
