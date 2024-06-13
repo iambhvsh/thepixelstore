@@ -19,20 +19,28 @@
       "id": "1684349733"
     },
     "screenshots": [
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/61/03/2561038d-60b1-f318-8d0f-eb5a64df8711/ba302e6a-2028-41bc-a36a-d3c90801f92f_6.5__1242x2688_1.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a9/62/1ba9620f-7676-ddb3-fc1e-29deee3cd0e3/834780f2-804d-406f-8ae6-22538bfe9be6_6.5__1242x2688_2.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/47/22/70472232-e765-21ce-f2af-dfb04a0a4d3a/e794bd07-1729-4e5f-adde-ec5c00be9d3d_6.5__1242x2688_3.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/a1/ad/69a1ad91-20e4-dcb5-eefa-9c408eee7949/cdffc351-3780-4090-86d7-c0f43999158d_6.5__1242x2688_4.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/56/40/475640ca-ece2-8471-b270-b97bf182b092/cc401e77-d3f5-4e17-9bd1-f1eead601eab_6.5__1242x2688_6.png/600x0w.webp"
-    ],
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/61/03/2561038d-60b1-f318-8d0f-eb5a64df8711/ba302e6a-2028-41bc-a36a-d3c90801f92f_6.5__1242x2688_1.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a9/62/1ba9620f-7676-ddb3-fc1e-29deee3cd0e3/834780f2-804d-406f-8ae6-22538bfe9be6_6.5__1242x2688_2.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/47/22/70472232-e765-21ce-f2af-dfb04a0a4d3a/e794bd07-1729-4e5f-adde-ec5c00be9d3d_6.5__1242x2688_3.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/a1/ad/69a1ad91-20e4-dcb5-eefa-9c408eee7949/cdffc351-3780-4090-86d7-c0f43999158d_6.5__1242x2688_4.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/56/40/475640ca-ece2-8471-b270-b97bf182b092/cc401e77-d3f5-4e17-9bd1-f1eead601eab_6.5__1242x2688_6.png/600x0w.webp"
+  ],
     "versions": [
       {
         "version": "1.2024.157",
         "release_date": "2024-06-12T00:00:00",
         "release_notes": "Bug fixes and small improvements."
-      }
-    ]
-  },
+    }
+  ],
+    "reviews": [
+      {
+        "author": "Sarah",
+        "date": "3d ago",
+        "rating": 5,
+        "comment": "ChatGPT is amazing! It helps me with my studies and provides quick answers to my questions."
+    }
+  ]
+},
   {
     "packageName": "com.google.android.youtube",
     "featured": "New update",
@@ -53,54 +61,70 @@
       "id": 281956209
     },
     "screenshots": [
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c0/14/f8/c014f89b-973d-2486-192a-dc9b4d12f370/7a94f703-7c3e-4789-9bd7-ce80045fe7b6_iOS-6.5-in_1.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/aa/ab/d9/aaabd92f-65f7-5a99-8fac-af004efd044a/9bde600a-9d57-41c4-830b-3261fee4a323_iOS-6.5-in_2.jpg/600x0w.webp",
-      "http://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bf/15/2f/bf152f19-34f8-7760-30cc-84c2547b4c75/634cb861-844f-4310-9dca-1d395031a99e_iOS-6.5-in_3.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/eb/81/e0/eb81e09e-7da6-5160-caa8-d3b47cd1ff46/8d366307-dd64-45f4-8cf3-d45be7dec00d_iOS-6.5-in_4.jpg/600x0w.webp",
-      "http://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6d/b5/b3/6db5b38d-065a-7823-734e-a3a1b2ecf3f1/84bdc830-e257-413c-b355-024445f557e5_iOS-6.5-in_5.jpg/600x0w.webp"
-    ],
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/c0/14/f8/c014f89b-973d-2486-192a-dc9b4d12f370/7a94f703-7c3e-4789-9bd7-ce80045fe7b6_iOS-6.5-in_1.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/aa/ab/d9/aaabd92f-65f7-5a99-8fac-af004efd044a/9bde600a-9d57-41c4-830b-3261fee4a323_iOS-6.5-in_2.jpg/600x0w.webp",
+    "http://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bf/15/2f/bf152f19-34f8-7760-30cc-84c2547b4c75/634cb861-844f-4310-9dca-1d395031a99e_iOS-6.5-in_3.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/eb/81/e0/eb81e09e-7da6-5160-caa8-d3b47cd1ff46/8d366307-dd64-45f4-8cf3-d45be7dec00d_iOS-6.5-in_4.jpg/600x0w.webp",
+    "http://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6d/b5/b3/6db5b38d-065a-7823-734e-a3a1b2ecf3f1/84bdc830-e257-413c-b355-024445f557e5_iOS-6.5-in_5.jpg/600x0w.webp"
+  ],
     "versions": [
       {
         "version": "19.23.33",
         "release_date": "2024-06-09T00:00:00",
         "release_notes": "Bug fixes, stability improvements, repairs to time-space continuum, etc. etc."
-      }
-    ]
-  },
-  {
-    "packageName": "com.instagram.android",
-    "featured": "New update",
-    "title": "Instagram",
-    "slug": "instagram",
-    "subtitle": "",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/cb/4a/40cb4aef-d786-a779-145d-137f354beb4c/Prod-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1Ar3ocxArRBBet84T0MScqJbpOmvb0TsTg&usqp=CAU",
-    "description": "Bringing you closer to the people and things you love. — Instagram from Facebook\n\nConnect with friends, share what you’re up to, or see what's new from others all over the world. Explore our community where you can feel free to be yourself and share everything from your daily moments to life's highlights.\n\nExpress Yourself and Connect With Friends\n\n- Add photos and videos to your story that disappear after 24 hours, and bring them to life with fun creative tools.\n- Message your friends in Direct. Start fun conversations about what you see on Feed and Stories.\n- Post photos and videos to your feed that you want to show on your profile.\n\nLearn More About Your Interests\n\n- Check out IGTV for longer videos from your favorite creators.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.",
-    "price": "$0.00",
-    "release_date": "2024-06-11T00:00:00",
-    "size": "67.6 MB",
-    "promotionalText": "",
-    "rating": 4.8,
-    "totalRating": "3.6B",
-    "developer": {
-      "name": "Instagram, Inc.",
-      "id": 389801255
-    },
-    "screenshots": [
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/d4/e9/27d4e967-76c4-2376-b806-21bf9768377f/9812d4ae-38c2-45ce-8818-d523b841b5e0_3_iOS_6.7.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/80/36/ff8036ef-d2ef-e925-66fd-f04537886abf/544105ea-d501-40ab-ada8-ef4c61d0e570_4_iOS_6.7.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/75/32/b97532ca-9154-c5f1-3dab-2c2cb38b0290/0fd3257d-2288-46c9-8dd2-2572f3f9c5d3_6_iOS_6.7.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/7c/7c/e77c7c9b-fd0b-5901-fc13-16940cd79c31/6d1c1189-0f7a-47e6-8e58-5463935e3fdc_5_iOS_6.7.jpg/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/ee/72/91ee7215-c9f1-f382-a8f4-10b2c01d42ba/c556b652-5cf7-4c3d-8cfe-b972766129b0_2_iOS_6.7.jpg/600x0w.webp"
-    ],
-    "versions": [
+    }
+  ],
+    "reviews": [
       {
-        "version": "335.0.0.39.93",
-        "release_date": "2024-06-11T00:00:00",
-        "release_notes": "The latest version contains bug fixes and performance improvements."
-      }
-    ]
+        "author": "David",
+        "date": "5d ago",
+        "rating": 4,
+        "comment": "YouTube is great for finding music videos and keeping up with my favorite channels. It's easy to use and has a vast library of content."
+    }
+  ]
+},
+{
+  "packageName": "com.instagram.android",
+  "featured": "New update",
+  "title": "Instagram",
+  "slug": "instagram",
+  "subtitle": "",
+  "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/cb/4a/40cb4aef-d786-a779-145d-137f354beb4c/Prod-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
+  "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1Ar3ocxArRBBet84T0MScqJbpOmvb0TsTg&usqp=CAU",
+  "description": "Bringing you closer to the people and things you love. — Instagram from Facebook\n\nConnect with friends, share what you’re up to, or see what's new from others all over the world. Explore our community where you can feel free to be yourself and share everything from your daily moments to life's highlights.\n\nExpress Yourself and Connect With Friends\n\n- Add photos and videos to your story that disappear after 24 hours, and bring them to life with fun creative tools.\n- Message your friends in Direct. Start fun conversations about what you see on Feed and Stories.\n- Post photos and videos to your feed that you want to show on your profile.\n\nLearn More About Your Interests\n\n- Check out IGTV for longer videos from your favorite creators.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.",
+  "price": "$0.00",
+  "release_date": "2024-06-11T00:00:00",
+  "size": "67.6 MB",
+  "promotionalText": "",
+  "rating": 4.8,
+  "totalRatings": "3.6B",
+  "developer": {
+    "name": "Instagram, Inc.",
+    "id": 389801255
   },
+  "screenshots": [
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/d4/e9/27d4e967-76c4-2376-b806-21bf9768377f/9812d4ae-38c2-45ce-8818-d523b841b5e0_3_iOS_6.7.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/80/36/ff8036ef-d2ef-e925-66fd-f04537886abf/544105ea-d501-40ab-ada8-ef4c61d0e570_4_iOS_6.7.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/75/32/b97532ca-9154-c5f1-3dab-2c2cb38b0290/0fd3257d-2288-46c9-8dd2-2572f3f9c5d3_6_iOS_6.7.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e7/7c/7c/e77c7c9b-fd0b-5901-fc13-16940cd79c31/6d1c1189-0f7a-47e6-8e58-5463935e3fdc_5_iOS_6.7.jpg/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/91/ee/72/91ee7215-c9f1-f382-a8f4-10b2c01d42ba/c556b652-5cf7-4c3d-8cfe-b972766129b0_2_iOS_6.7.jpg/600x0w.webp"
+  ],
+  "versions": [
+    {
+      "version": "335.0.0.39.93",
+      "release_date": "2024-06-11T00:00:00",
+      "release_notes": "The latest version contains bug fixes and performance improvements."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Emily",
+      "date": "2w ago",
+      "rating": 5,
+      "comment": "Instagram is my go-to app for staying connected with friends and sharing special moments. The new update runs smoothly and I love the new features!"
+    }
+  ]
+},
   {
     "packageName": "com.picsart.studio.light",
     "title": "PicsArt Light: Photo Editor + Collage",
@@ -114,24 +138,32 @@
     "size": "136.8 MB",
     "promotionalText": "Get your new go-to photo and video editor on mobile. Download to access highly popular Sketch Effects, Magic Effects, Beautify Tool, free Stickers, and more!",
     "rating": 4.7,
-    "totalRating": "96K",
+    "totalRatings": "96K",
     "developer": {
       "name": "PicsArt, Inc.",
       "id": 587366038
     },
     "screenshots": [
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/88/93/608893c8-faea-0393-ccc4-b3fdeaa523cb/86c528d0-5e97-4bab-84c8-211144fc813e_1._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b9/b3/f5b9b39d-feb4-5e81-cabf-34af04c06601/c0e9aa26-edb9-4368-9158-096194a61b08_2._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e9/4f/12/e94f129a-e80a-e512-c57d-4df87dd85709/5b0a033b-0902-409f-b2da-9ee714f65a6d_3._AI_BG___iPhone_6.5_.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/17/6a/75176aeb-a548-b251-4fb3-2a3623082a22/3fb4899d-b1d5-4cc5-969b-55252e75851c_4._Remove_BG___iPhone_6.5_.png/600x0w.webp",
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/9b/65/3b9b65cc-3e42-5d8d-1018-cacfa1898db5/ee3b2a80-551b-481b-947a-5f42cff12ab2_5._Templates___iPhone_6.5_.png/600x0w.webp"
-    ],
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/88/93/608893c8-faea-0393-ccc4-b3fdeaa523cb/86c528d0-5e97-4bab-84c8-211144fc813e_1._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b9/b3/f5b9b39d-feb4-5e81-cabf-34af04c06601/c0e9aa26-edb9-4368-9158-096194a61b08_2._Multiple_Use_Cases___iPhone_6.5_.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e9/4f/12/e94f129a-e80a-e512-c57d-4df87dd85709/5b0a033b-0902-409f-b2da-9ee714f65a6d_3._AI_BG___iPhone_6.5_.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/17/6a/75176aeb-a548-b251-4fb3-2a3623082a22/3fb4899d-b1d5-4cc5-969b-55252e75851c_4._Remove_BG___iPhone_6.5_.png/600x0w.webp",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/9b/65/3b9b65cc-3e42-5d8d-1018-cacfa1898db5/ee3b2a80-551b-481b-947a-5f42cff12ab2_5._Templates___iPhone_6.5_.png/600x0w.webp"
+  ],
     "versions": [
       {
         "version": "24.3.2_lite",
         "release_date": "2024-02-15T00:00:00",
         "release_notes": "Get all snug and cozy next to a fireplace and enjoy our latest update. This one includes:\n• Collage support for Replay - now you can enable Replay for your collage edits. You can also apply other users’ Collage Replays to your own edits.\n• Blend Modes for Shape Mask - added all blending modes to the Shape Mask tool.\n• Bug fixes and improvements."
-      }
-    ]
-  }
+    }
+  ],
+    "reviews": [
+      {
+        "author": "Samantha",
+        "date": "3d ago",
+        "rating": 4,
+        "comment": "I love using PicsArt to edit my photos! The tools are easy to use, and I can create stunning collages and edits effortlessly."
+    }
+  ]
+}
 ]
