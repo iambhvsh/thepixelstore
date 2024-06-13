@@ -18,20 +18,17 @@ jobs:
         with:
           node-version: '16'  # Replace with the latest LTS version or the version you want to use
 
-      - name: Update OpenSSL
+      - name: Clear npm cache and update Browserslist
         run: |
-          sudo apt-get update
-          sudo apt-get install -y openssl
-
-      - name: Clear npm cache
-        run: npm cache clean --force
+          npm cache clean --force
+          npm update browserslist
 
       - name: Install webpack-dev-server and eslint globally
         run: |
           sudo npm install -g webpack-dev-server eslint
 
-      - name: Install 'swiper' package from npm registry
-        run: npm install swiper
+      - name: Install 'swiper/react' from GitHub
+        run: npm install git+https://github.com/nolimits4web/swiper.git
 
       - name: Build for production
         run: npm run build-prod
