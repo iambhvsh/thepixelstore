@@ -3,7 +3,7 @@ name: Firebase Hosting CI/CD
 on:
   push:
     branches:
-      - main  # Adjust to your main branch name
+      - main  # adjust to your main branch name
 
 jobs:
   build_and_deploy:
@@ -13,14 +13,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Replace with the latest LTS version or the version you want to use
+
+      - name: Update OpenSSL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openssl
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Install webpack-dev-server and eslint globally
         run: |
           sudo npm install -g webpack-dev-server eslint
-      
+
       - name: Install swiper and other dependencies
         run: |
           npm install swiper
-
 
       - name: Build for production
         run: npm run build-prod
