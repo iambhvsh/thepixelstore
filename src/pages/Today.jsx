@@ -18,7 +18,7 @@ const Today = () => {
   const yesterdayDateTitle = new Intl.DateTimeFormat('en', { weekday: 'long' }).format(yesterdayDate);
   const yesterdayDateHeading = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long' }).format(yesterdayDate);
 
-  const appChatGpt = apps.find((app) => app.title === 'ChatGpt');
+  const appChatGPT = apps.find((app) => app.title === 'ChatGPT');
   const appNetflix = apps.find((app) => app.title === 'Netflix');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
   const appSevenSins = games.find((app) => app.title === 'The Seven Deadly Sins');
@@ -47,7 +47,7 @@ const Today = () => {
         <AppstoreCard
           image="https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg"
           title={(<span>App<br />Of The<br />Day</span>)}
-          titleColor="#fff"
+          titleColor="#000"
           titlePosition="bottom"
           titleLarge
           app={appChatGpt}
