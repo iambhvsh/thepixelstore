@@ -21,6 +21,7 @@ import './AppDetails.less';
 function getAppByPackageName(packageName) {
   return [...apps, ...games].find((app) => app.packageName === packageName);
 }
+
 function formatDate(date) {
   const formatter = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: 'numeric' });
   return formatter.format(new Date(date));
@@ -47,9 +48,11 @@ const AppDetails = ({ packageName, backText }) => {
       navbarShowCount: false,
     });
   }
+
   function pageDestroy() {
     if (pb.current) pb.current.destroy();
   }
+
   function openPhotoBrowser(index) {
     if (!pb.current) return;
     pb.current.open(index);
@@ -130,89 +133,26 @@ const AppDetails = ({ packageName, backText }) => {
               </div>
             </div>
           ))}
-          <div className="app-ratings-votes-total">{totalVotes} Ratings</div>
+          <div className="app-ratings-votes-total">{app.totalRatings} Ratings</div>
         </div>
       </div>
-      {/* Random reviews */}
+      {/* Reviews */}
       <div className="block app-reviews">
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>John</b></span>
-            <span>2d ago</span>
+        {app.reviews.map((review, index) => (
+          <div className="app-review" key={index}>
+            <div className="app-review-header">
+              <span><b>{review.author}</b></span>
+              <span>{formatDate(review.date)}</span>
+            </div>
+            <div className="app-review-header">
+              <RatingStars rating={review.rating} />
+              <span>{review.user}</span>
+            </div>
+            <div className="app-review-text">
+              {review.comment}
+            </div>
           </div>
-          <div className="app-review-header">
-            <RatingStars rating={5} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum debitis natus cum quae est rerum cupiditate cumque delectus eaque ipsa, accusamus facilis deleniti consequuntur, aliquam soluta minima, eos exercitationem.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Mike</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={3} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur laudantium, laborum sunt adipisci magni in doloremque neque error earum fugiat! Nihil molestias rem tenetur laboriosam illo similique nobis adipisci?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Vladimir</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={2} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, repudiandae minima? Reprehenderit ab placeat delectus necessitatibus suscipit cumque laborum modi, eaque, a consequuntur, pariatur et itaque. Vitae odio necessitatibus amet.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Karoly</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={4} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab ex! Architecto alias delectus, optio eos nostrum obcaecati repellat distinctio, ab, quam dolores voluptatem ex inventore facere expedita exercitationem repudiandae?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Peter</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={5} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo odit exercitationem eligendi maiores rerum quo, quos ullam quam! Quia facilis consequatur vitae cupiditate molestias maiores odit magnam quo itaque.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Alim</b></span>
-            <span>5d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={1} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ipsa accusantium qui praesentium, obcaecati quae illum, tempora molestias similique nihil sunt in tempore ipsam laborum illo maxime amet quos consectetur!
-          </div>
-        </div>
+        ))}
       </div>
       {app.versions && app.versions.length > 0 && (
         <>
