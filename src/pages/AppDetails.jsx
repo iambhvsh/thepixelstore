@@ -42,7 +42,7 @@ const AppDetails = ({ packageName, backText }) => {
 
   function pageInit() {
     pb.current = f7.photoBrowser.create({
-      photos: [...app.screenshots],
+      photos: app.screenshots.map((screenshot) => ({ url: screenshot })),
       toolbar: false,
       navbarShowCount: false,
     });
