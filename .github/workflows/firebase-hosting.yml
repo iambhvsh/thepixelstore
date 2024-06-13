@@ -18,19 +18,13 @@ jobs:
         with:
           node-version: '18'  # Use Node.js version >= 18.0.0 or >= 20.0.0
 
-      - name: Clear npm cache and update Browserslist
-        run: |
-          npm cache clean --force
-          npm update browserslist
+      - name: Clear npm cache
+        run: npm cache clean --force
 
-      - name: Install webpack-dev-server and eslint globally
-        run: |
-          sudo npm install -g webpack-dev-server eslint
+      - name: Set NODE_ENV to production
+        run: export NODE_ENV=production
 
-      - name: Install 'swiper/react' from GitHub
-        run: npm install git+https://github.com/nolimits4web/swiper.git
-
-      - name: Build for production
+      - name: Run npm run build-prod
         run: npm run build-prod
 
       - name: Upgrade Firebase CLI
