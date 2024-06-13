@@ -30,9 +30,8 @@ jobs:
         run: |
           sudo npm install -g webpack-dev-server eslint
 
-      - name: Install swiper and other dependencies
-        run: |
-          npm install swiper
+      - name: Install swiper/react package
+        run: npm install swiper/react
 
       - name: Build for production
         run: npm run build-prod
