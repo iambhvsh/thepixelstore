@@ -6,8 +6,6 @@ import AppstorePageTitle from '../components/AppstorePageTitle';
 import AppstoreCard from '../components/AppstoreCard';
 import './Today.less';
 
-import arcadeCardImage from '../assets/arcade.jpg';
-
 import { apps, games } from '../js/data';
 
 const Today = () => {
@@ -19,79 +17,63 @@ const Today = () => {
   const yesterdayDateHeading = new Intl.DateTimeFormat('en', { day: 'numeric', month: 'long' }).format(yesterdayDate);
 
   const appChatGPT = apps.find((app) => app.title === 'ChatGPT');
-  const appNetflix = apps.find((app) => app.title === 'Netflix');
+  const appYoutube = apps.find((app) => app.title === 'YouTube: Watch, Listen, Stream');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
-  const appSevenSins = games.find((app) => app.title === 'The Seven Deadly Sins');
+  const appPicsArt = apps.find((app) => app.title === 'PicsArt Light: Photo Editor + Collage');
 
   return (
     <AppstorePage noCollapsedNavbar>
       <AppstorePageTitle title={todayDateTitle} heading={todayDateHeading} accountLink />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image={arcadeCardImage}
-          title="5 awesome Apple Arcade puzzle games"
+          image="https://cdn.jsdelivr.net/gh/iambhvsh/surecdn@main/images/app-store/appstorelogo.png"
+          title="PixelPulse Store"
           titleColor="#000"
           titlePosition="top"
-          subtitle="Apple Arcade"
+          subtitle="About"
           subtitleColor="#000"
           closeButtonColor="#000"
         >
-          <p><b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Repellendus unde quam voluptate iure. Harum accusamus, porro tempora recusandae debitis culpa, ducimus numquam aliquam provident sunt unde totam exercitationem iure enim.</p>
-          <p>Explicabo reprehenderit maxime hic natus perspiciatis quae pariatur porro obcaecati numquam velit exercitationem iste voluptatibus tenetur ipsa deleniti dolor reiciendis amet vitae, consectetur deserunt! Vitae sequi adipisci earum. Assumenda, dolorem?</p>
-          <h3>Ratione eos perspiciatis</h3>
-          <p>Obcaecati, libero corrupti! Modi asperiores debitis eius, culpa, quisquam laudantium fugit ex quia, dolores repellendus sapiente! Dolor non doloremque ea perspiciatis unde excepturi deleniti. Ratione eos perspiciatis vitae exercitationem adipisci.</p>
-          <p>Possimus amet, quasi tenetur error nisi dolorum quod, molestiae rerum saepe est asperiores ex itaque rem repellendus deleniti. Doloremque unde explicabo consectetur nobis voluptatem libero molestias est perferendis. Quos, ratione.</p>
-          <p>Ipsum maxime molestiae sunt pariatur, molestias corporis aliquam, magni tempore cum explicabo placeat suscipit nulla repellendus quibusdam facilis, ea est reprehenderit libero quasi eligendi rem qui architecto accusamus rerum. At?</p>
+          <p>Welcome to the PixelPulse Store, a cutting-edge marketplace built on ReactJs and Framework7. Our goal is to deliver a flawless user experience, combining seamless functionality with visually captivating design, reminiscent of the renowned iOS App Store. Discover a curated selection of applications designed to enhance productivity, creativity, and entertainment, all within an interface that prioritizes both style and usability.</p>
+          
         </AppstoreCard>
 
         <AppstoreCard
           image="https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg"
-          title={(<span>App<br />Of The<br />Day</span>)}
-          titleColor="#000"
-          titlePosition="bottom"
-          titleLarge
-          app={appChatGPT}
-        >
-          <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Quam corporis minima inventore? Quod unde ex fugiat itaque consequuntur, rem assumenda dolor beatae incidunt facere dolorem nobis repellat expedita sed ea?</p>
-          <p>Ducimus, eveniet ea adipisci, impedit repellendus rem doloremque minima incidunt nihil cumque voluptatibus quos laudantium animi quibusdam odio molestias iusto delectus voluptatem! Totam laborum rem numquam temporibus possimus quae iure?</p>
-          <h3>Minus at repudiandae</h3>
-          <p>Repellendus qui possimus repellat? Voluptas distinctio asperiores impedit enim corporis dolores nulla eius provident dignissimos? Minus at repudiandae consequuntur dolorem magni quibusdam perferendis animi amet tenetur eos iure, id sint.</p>
-          <p>Dolore exercitationem consequuntur excepturi? Voluptatem totam adipisci illum voluptate, iste quia, excepturi non culpa, reprehenderit repudiandae labore itaque! Cupiditate, harum laborum mollitia quidem tempora est saepe perspiciatis fugiat quia neque.</p>
-        </AppstoreCard>
-        <AppstoreCard
-          image="static/apps-images/netflix-7.jpg"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
-          app={appNetflix}
+          app={appChatGPT}
         >
-          <p>Lorem ipsum, <b>dolor sit amet consectetur adipisicing</b> elit. Explicabo sapiente nisi accusantium earum quos culpa quam doloremque distinctio suscipit nobis corrupti eaque, debitis quasi quisquam rerum quas beatae dolorem eos?</p>
-          <p>Magnam obcaecati fugit, ullam nostrum in dolore sed ab culpa ipsum architecto sunt distinctio necessitatibus et. Quam laborum delectus tenetur rem quae itaque ad numquam, eveniet, repudiandae quas eum unde?</p>
-          <h3>Enim laboriosam repellat</h3>
-          <p>Dignissimos recusandae consectetur adipisci minima vel molestiae laboriosam quisquam libero quos sint, expedita necessitatibus. Asperiores, consectetur! Odio nobis odit placeat quos magni. Enim laboriosam repellat a blanditiis doloremque esse repellendus?</p>
-          <p>Commodi, similique tempora, nesciunt voluptatem blanditiis, dignissimos voluptas quidem cupiditate soluta magni dolorem sequi illum accusamus temporibus iste dolorum voluptates illo maxime sit nulla. Ullam, repellendus. Explicabo architecto laborum itaque.</p>
+          <p>ChatGPT is an advanced AI language model developed by OpenAI, designed to engage in natural language conversations with users. Available through various platforms and integrations, the ChatGPT app allows users to interact with the model to ask questions, seek information, receive explanations, and even generate text based on prompts. It leverages machine learning to continuously improve its responses, offering personalized interactions and serving a wide range of practical and creative purposes for users seeking conversational AI capabilities.</p>
+        </AppstoreCard>
+        <AppstoreCard
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQark5NoC2-pK418pUOKf_eV2jg0U8M0Wsby3XZONawJXKS0y4PLRc_yXfo&s=10"
+          title={(<span>APP<br />OF THE<br />DAY</span>)}
+          titleColor="#fff"
+          titlePosition="bottom"
+          titleLarge
+          app={appYoutube}
+        >
+          <p>YouTube is a widely popular video-sharing platform where users can watch, share, and upload videos across a vast array of genres and interests. The YouTube app provides easy access to this content on mobile devices, allowing users to discover trending videos, subscribe to channels, create playlists, and engage through likes, comments, and shares. It supports a range of features such as offline viewing, personalized recommendations based on viewing history, and live streaming capabilities, making it a versatile and integral part of digital entertainment for millions globally.</p>
         </AppstoreCard>
       </div>
 
       <AppstorePageTitle title={yesterdayDateTitle} heading={yesterdayDateHeading} accountLink={false} />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image="static/apps-images/the-seven-deadly-sins-8.jpg"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_SCoNGsXZPFSxTV_vd-iaW7da9yMYFOZ6HWBqN8DhIJJ2MMtPY3ROdg&s=10"
           title={(<span>GAME<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
-          app={appSevenSins}
+          app={appPicsArt}
         >
-          <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Quam corporis minima inventore? Quod unde ex fugiat itaque consequuntur, rem assumenda dolor beatae incidunt facere dolorem nobis repellat expedita sed ea?</p>
-          <p>Ducimus, eveniet ea adipisci, impedit repellendus rem doloremque minima incidunt nihil cumque voluptatibus quos laudantium animi quibusdam odio molestias iusto delectus voluptatem! Totam laborum rem numquam temporibus possimus quae iure?</p>
-          <h3>Minus at repudiandae</h3>
-          <p>Repellendus qui possimus repellat? Voluptas distinctio asperiores impedit enim corporis dolores nulla eius provident dignissimos? Minus at repudiandae consequuntur dolorem magni quibusdam perferendis animi amet tenetur eos iure, id sint.</p>
-          <p>Dolore exercitationem consequuntur excepturi? Voluptatem totam adipisci illum voluptate, iste quia, excepturi non culpa, reprehenderit repudiandae labore itaque! Cupiditate, harum laborum mollitia quidem tempora est saepe perspiciatis fugiat quia neque.</p>
+          <p>PicsArt is one of today's top apps on the App Store, celebrated for its powerful photo editing and creative tools. It offers a wide range of features including advanced filters, customizable effects, collage making, and drawing tools, all designed to enhance and transform photos into captivating works of art. With a user-friendly interface and a thriving community, PicsArt encourages creativity and collaboration, making it a favorite among aspiring and professional photographers alike.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="static/apps-images/instagram-5.jpg"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1Ar3ocxArRBBet84T0MScqJbpOmvb0TsTg&usqp=CAU"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#000"
           titlePosition="bottom"
@@ -100,11 +82,7 @@ const Today = () => {
           app={appInstagram}
           appColor="#000"
         >
-          <p>Lorem ipsum, <b>dolor sit amet consectetur adipisicing</b> elit. Explicabo sapiente nisi accusantium earum quos culpa quam doloremque distinctio suscipit nobis corrupti eaque, debitis quasi quisquam rerum quas beatae dolorem eos?</p>
-          <p>Magnam obcaecati fugit, ullam nostrum in dolore sed ab culpa ipsum architecto sunt distinctio necessitatibus et. Quam laborum delectus tenetur rem quae itaque ad numquam, eveniet, repudiandae quas eum unde?</p>
-          <h3>Enim laboriosam repellat</h3>
-          <p>Dignissimos recusandae consectetur adipisci minima vel molestiae laboriosam quisquam libero quos sint, expedita necessitatibus. Asperiores, consectetur! Odio nobis odit placeat quos magni. Enim laboriosam repellat a blanditiis doloremque esse repellendus?</p>
-          <p>Commodi, similique tempora, nesciunt voluptatem blanditiis, dignissimos voluptas quidem cupiditate soluta magni dolorem sequi illum accusamus temporibus iste dolorum voluptates illo maxime sit nulla. Ullam, repellendus. Explicabo architecto laborum itaque.</p>
+          <p>Instagram remains one of today's top apps on the App Store, renowned for its focus on visual storytelling and social networking. Users can share photos and videos with their followers, apply filters and effects, and engage through likes, comments, and direct messaging. The platform fosters creativity through features like Stories, IGTV, and Reels, providing tools for both personal expression and brand promotion. With its intuitive interface and vast user base, Instagram continues to shape digital culture and inspire connections worldwide.</p>
         </AppstoreCard>
       </div>
     </AppstorePage>
