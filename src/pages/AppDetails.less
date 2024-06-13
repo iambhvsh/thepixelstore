@@ -1,299 +1,321 @@
 @import url("../css/_mixins.less");
-
-/* Navbar Styles */
 .app-navbar {
-  &-icon img {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
+  &-icon {
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 22%;
+    }
   }
-
   &-button {
-    transition: opacity 200ms;
+    transition: 200ms;
     opacity: 0;
-
     .button {
       min-width: 72px;
     }
   }
-
   &.navbar-transparent-visible .app-navbar-button {
     opacity: 1;
   }
 }
-
-/* Header Styles */
 .app-header {
   display: flex;
-  align-items: center;
-  margin-top: 20px; /* Adjust margin as needed */
-
+  align-items: stretch;
+  margin-top: 0;
   &-icon {
     width: 118px;
     height: 118px;
-    border-radius: 16px; /* Adjust border radius as needed */
+    border-radius: 22%;
     margin-right: var(--f7-block-padding-horizontal);
     flex-shrink: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
+    border: 1px solid rgba(0,0,0,0.1);
     .theme-dark & {
-      border-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.1);
     }
-
     @media (min-width: 768px) {
-      width: 150px; /* Adjust width as needed */
-      height: 150px; /* Adjust height as needed */
+      width: 191px;
+      height: 191px;
     }
   }
-
   &-content {
-    flex: 1;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    flex-shrink: 10;
+    min-width: 0;
   }
-
   &-title {
     font-size: 22px;
-    font-weight: bold;
-
+    font-weight: 600;
     @media (min-width: 768px) {
-      font-size: 28px;
+      font-size: 27px;
     }
   }
-
   &-subtitle {
     font-size: 16px;
     opacity: 0.55;
-
     @media (min-width: 768px) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
-
-  &-ratings {
+  &-actions {
     display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    .button {
+      min-width: 72px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: auto;
+    }
+  }
+  &-rating {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.55;
     align-items: center;
-    margin-top: 8px; /* Adjust margin as needed */
-
+    position: relative;
     &-value {
       font-size: 22px;
       font-weight: bold;
       margin-right: 4px;
     }
-
     .rating-stars .f7-icons {
       font-size: 18px;
-      color: var(--f7-color-orange);
+    }
+    &-sub {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      font-size: 12px;
+      opacity: 0.75;
+      @media (min-width: 768px) {
+        position: static;
+        margin-left: 16px;
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0;
+      }
     }
 
-    &-sub {
-      font-size: 14px;
-      opacity: 0.75;
-      margin-left: 8px; /* Adjust margin as needed */
+  }
+  @media (max-width: 767px) {
+    margin-bottom: calc(var(--f7-block-margin-vertical) + 30px + 16px);
+    &-ratings {
+      margin-top: 16px;
+      margin-bottom: -46px;
+      margin-left: calc(-118px - var(--f7-block-padding-horizontal));
     }
   }
 }
-
-/* Screenshots Styles */
 .app-screenshots {
-  overflow-x: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   white-space: nowrap;
-  font-size: 0; /* Prevent whitespace gap */
-
+  font-size: 0;
+  scroll-padding-left: calc(20px + var(--f7-safe-area-left));
   &::-webkit-scrollbar {
     display: none;
+    opacity: 0;
   }
-
   img {
     width: 220px;
-    height: 400px;
-    border-radius: 16px;
+    border-radius: 22px;
+    scroll-snap-align: start start;
     margin-right: 10px;
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-
+    background-color: #f1f1f1;
     .theme-dark & {
       background-color: #111;
     }
-
     @media (min-width: 768px) {
-      width: 280px;
-      height: 500px;
-      margin-right: 20px;
+      margin-right: 24px;
     }
   }
+  &:after {
+    content: '';
+    width: 1px;
+    height: 1px;
+    flex-shrink: 0;
+  }
 }
-
-/* Description Styles */
 .app-description {
   font-size: 15px;
-
   &-content {
     position: relative;
     padding-top: 16px;
-
-    &:after {
+    .hairline(top, var(--f7-block-strong-border-color));
+  }
+  .link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &.active-state {
+      opacity: 1;
+    }
+    &:before {
       content: '';
       position: absolute;
-      bottom: 0;
       right: 0;
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--f7-block-strong-border-color));
+      top: 0;
+      height: 100%;
+      width: 200%;
+      background-image: linear-gradient(to left, #fff 50%, rgba(255, 255, 255 ,0));
+      z-index: -1;
+      .theme-dark & {
+        background-image: linear-gradient(to left, #000 50%, rgba(0, 0, 0 ,0));
+      }
     }
   }
-
   &-text {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 16px; /* Adjust margin as needed */
+  }
+  &-full &-text {
+    display: block;
+    animation: app-description-fade-in 600ms;
+  }
+  &-full .link {
+    display: none;
   }
 }
 
-/* Ratings & Reviews Styles */
+@keyframes app-description-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .app-ratings {
   display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-
+  margin-bottom: 0;
   &-number {
+    line-height: 1;
+    text-align: center;
     font-weight: bold;
-    font-size: 28px;
-
-    b {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.05em;
+    flex-shrink: 0;
+    b, span {
+      display: block;
     }
-
+    b {
+      font-size: 60px;
+      letter-spacing: -0.05em;
+      font-weight: 800;
+    }
     span {
-      font-size: 14px;
+      font-size: 15px;
       opacity: 0.55;
     }
   }
-
   &-votes {
-    flex: 1;
-    text-align: right;
-    font-size: 14px;
-    opacity: 0.55;
-    margin-left: 12px;
-
+    width: 100%;
+    flex-shrink: 10;
+    line-height: 10px;
+    margin-top: 6px;
     i {
-      font-size: 12px;
+      font-size: 8px;
       opacity: 0.55;
     }
-
+    &-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
     &-progress {
       width: 70%;
       height: 2px;
-      background: rgba(0, 0, 0, 0.17);
-
+      background: rgba(0,0,0,0.17);
+      border-radius: 2px;
+      margin-left: 10px;
       span {
+        background: rgba(0,0,0,0.55);
         display: block;
         height: 2px;
-        background: rgba(0, 0, 0, 0.55);
+        border-radius: 2px;
       }
-
       .theme-dark & {
-        background: rgba(255, 255, 255, 0.17);
-
+        background: rgba(255,255,255,0.17);
         span {
-          background: rgba(255, 255, 255, 0.55);
+          background: rgba(255,255,255,0.55);
         }
       }
     }
+    &-total {
+      text-align: right;
+      opacity: 0.55;
+      margin-top: 4px;
+    }
   }
 }
-
-/* Reviews Styles */
 .app-reviews {
   margin-top: 16px;
-  overflow-x: auto;
-  white-space: nowrap;
-  font-size: 0;
-
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  display: flex;
+  overflow: auto;
   &::-webkit-scrollbar {
     display: none;
+    opacity: 0;
   }
-
+  @media (min-width: 768px) {
+    scroll-padding-left: calc(20px + var(--f7-safe-area-left));
+  }
+  &:after {
+    content: '';
+    flex-shrink: 0;
+    width: 1px;
+    height: 1px;
+  }
   .app-review {
     border-radius: 10px;
-    background-color: var(--f7-block-strong-bg-color);
+    background: var(--f7-block-strong-bg-color);
     padding: 16px;
-    margin-right: 16px;
+    scroll-snap-align: center center;
+    width: 100%;
+    max-width: 350px;
+    margin-right: 10px;
     flex-shrink: 0;
-    min-width: 300px; /* Adjust minimum width as needed */
-
-    .app-review-header {
+    box-sizing: border-box;
+    html:not(.theme-dark) & {
+      background-color: #F2F2F6;
+    }
+    @media (min-width: 768px) {
+      margin-right: 24px;
+      scroll-snap-align: start start;
+    }
+    &-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-
       span:last-child {
         opacity: 0.55;
       }
-
       .rating-stars .f7-icons {
-        font-size: 18px;
+        font-size: 12px;
         color: var(--f7-color-orange);
       }
     }
-
-    .app-review-text {
+    &-text {
       margin-top: 16px;
     }
   }
 }
-
-/* Information List Styles */
 .app-information-list {
   --f7-list-bg-color: transparent;
-  --f7-list-item-title-text-color: rgba(0, 0, 0, 0.55);
+  --f7-list-item-title-text-color: rgba(0,0,0,0.55);
   --f7-list-item-after-text-color: #000;
-
   .theme-dark & {
     --f7-list-item-after-text-color: #fff;
-    --f7-list-item-title-text-color: rgba(255, 255, 255, 0.55);
+    --f7-list-item-title-text-color: rgba(255,255,255,0.55);
   }
-
   .item-link {
     --f7-list-item-title-text-color: var(--f7-theme-color);
     --f7-list-item-after-text-color: var(--f7-theme-color);
-  }
-}
-
-/* Custom Media Queries */
-@media (min-width: 1024px) {
-  .app-header {
-    &-icon {
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  .app-screenshots {
-    img {
-      width: 280px;
-      height: 500px;
-      margin-right: 20px;
-    }
-  }
-
-  .app-description {
-    &-content {
-      &:after {
-        width: 100%;
-      }
-    }
-  }
-
-  .app-reviews {
-    .app-review {
-      min-width: 400px;
-    }
   }
 }
