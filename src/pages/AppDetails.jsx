@@ -1,8 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   f7,
   Page,
   Navbar,
+  NavLeft,
+  NavTitle,
+  NavRight,
   Button,
   Link,
   Icon,
@@ -21,15 +24,19 @@ import './AppDetails.less';
 function getAppByPackageName(packageName) {
   return [...apps, ...games].find((app) => app.packageName === packageName);
 }
+
 function formatDate(date) {
   const formatter = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: 'numeric' });
   return formatter.format(new Date(date));
 }
 
-const AppDetails = ({ packageName, backText }) => {
+const AppDetails = ({ f7route, backText }) => {
+  const { packageName } = f7route.params;
   const app = getAppByPackageName(packageName);
   const pb = useRef(null);
   const [showFullDescription, setShowFullDescription] = useState(false);
+  const [shareUrl, setShareUrl] = useState('');
+  
   const ratingVotes = {
     5: 500,
     4: 100,
@@ -40,6 +47,11 @@ const AppDetails = ({ packageName, backText }) => {
 
   const totalVotes = Object.values(ratingVotes).reduce((acc, current) => acc + current);
 
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    setShareUrl(currentUrl);
+  }, []);
+
   function pageInit() {
     pb.current = f7.photoBrowser.create({
       photos: app.screenshots.map((screenshot) => ({ url: screenshot })),
@@ -47,9 +59,11 @@ const AppDetails = ({ packageName, backText }) => {
       navbarShowCount: false,
     });
   }
+
   function pageDestroy() {
     if (pb.current) pb.current.destroy();
   }
+
   function openPhotoBrowser(index) {
     if (!pb.current) return;
     pb.current.open(index);
@@ -61,29 +75,45 @@ const AppDetails = ({ packageName, backText }) => {
     };
   }
 
+  async function handleShare() {
+    try {
+      await navigator.share({
+        title: app.title,
+        text: app.subtitle,
+        url: shareUrl,
+      });
+    } catch (err) {
+      console.error('Error sharing:', err);
+    }
+  }
+
   return (
     <Page onPageInit={pageInit} onPageBeforeRemove={pageDestroy}>
       <Navbar
+        large
         transparent
         backLink={backText || 'Back'}
-        className="app-navbar"
+        className="app-navbar blur-navbar"
       >
-        <div className="app-navbar-icon" slot="title">
-          <img src={app.icon} alt={app.title} />
-        </div>
-        <div className="app-navbar-button" slot="right">
+        <NavLeft>
+          <Link back iconF7="arrow_left" />
+        </NavLeft>
+        <NavTitle large>
+          {app.title}
+        </NavTitle>
+        <NavRight>
           <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
-        </div>
+          <Button onClick={handleShare}>
+            <Icon f7="square_arrow_up" />
+          </Button>
+        </NavRight>
       </Navbar>
+
       <div className="block app-header">
         <img src={app.icon} alt={app.title} className="app-header-icon" />
         <div className="app-header-content">
           <div className="app-header-title">{app.title}</div>
           <div className="app-header-subtitle">{app.subtitle}</div>
-          <div className="app-header-actions">
-            <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
-            <Link iconF7="square_arrow_up" />
-          </div>
           <div className="app-header-ratings">
             <div className="app-header-rating">
               <div className="app-header-rating-value">{app.rating}</div>
@@ -93,29 +123,38 @@ const AppDetails = ({ packageName, backText }) => {
           </div>
         </div>
       </div>
+
       <div className="block app-screenshots">
-        {app.screenshots.map((screenshot, index) => (
-          <Screenshots
-            onClick={() => openPhotoBrowser(index)}
-            src={screenshot}
-            key={index}
-            alt="Screenshot"
-          />
-        ))}
+        <div className="app-screenshots-gallery">
+          {app.screenshots.map((screenshot, index) => (
+            <Screenshots
+              onClick={() => openPhotoBrowser(index)}
+              src={screenshot}
+              key={index}
+              alt="Screenshot"
+            />
+          ))}
+        </div>
       </div>
+
       <div className={`block app-description ${showFullDescription ? 'app-description-full' : ''}`}>
         <div className="app-description-content">
           <div className="app-description-text" dangerouslySetInnerHTML={createAppDescription()} />
-          <Link onClick={() => setShowFullDescription(true)}>more</Link>
+          {!showFullDescription && <Link onClick={() => setShowFullDescription(true)}>Read More</Link>}
         </div>
       </div>
+
       <AppstoreBlockTitle title="Ratings & Reviews">
         <Link>See All</Link>
       </AppstoreBlockTitle>
+
       <div className="block app-ratings">
-        <div className="app-ratings-number">
-          <b>{app.rating}</b>
-          <span>out of 5</span>
+        <div className="app-ratings-summary">
+          <div className="app-ratings-number">
+            <b>{app.rating}</b>
+            <span>out of 5</span>
+          </div>
+          <div className="app-ratings-votes-total">{totalVotes} Ratings</div>
         </div>
         <div className="app-ratings-votes">
           {[5, 4, 3, 2, 1].map((rating) => (
@@ -130,90 +169,28 @@ const AppDetails = ({ packageName, backText }) => {
               </div>
             </div>
           ))}
-          <div className="app-ratings-votes-total">{totalVotes} Ratings</div>
         </div>
       </div>
-      {/* Random reviews */}
+
       <div className="block app-reviews">
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>John</b></span>
-            <span>2d ago</span>
+        {/* Render each review dynamically */}
+        {app.reviews && app.reviews.map((review, index) => (
+          <div className="app-review" key={index}>
+            <div className="app-review-header">
+              <span><b>{review.author}</b></span>
+              <span>{formatDate(review.date)}</span>
+            </div>
+            <div className="app-review-header">
+              <RatingStars rating={review.rating} />
+              <span>{review.username}</span>
+            </div>
+            <div className="app-review-text">
+              {review.text}
+            </div>
           </div>
-          <div className="app-review-header">
-            <RatingStars rating={5} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum debitis natus cum quae est rerum cupiditate cumque delectus eaque ipsa, accusamus facilis deleniti consequuntur, aliquam soluta minima, eos exercitationem.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Mike</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={3} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur laudantium, laborum sunt adipisci magni in doloremque neque error earum fugiat! Nihil molestias rem tenetur laboriosam illo similique nobis adipisci?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Vladimir</b></span>
-            <span>3d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={2} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, repudiandae minima? Reprehenderit ab placeat delectus necessitatibus suscipit cumque laborum modi, eaque, a consequuntur, pariatur et itaque. Vitae odio necessitatibus amet.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Karoly</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={4} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab ex! Architecto alias delectus, optio eos nostrum obcaecati repellat distinctio, ab, quam dolores voluptatem ex inventore facere expedita exercitationem repudiandae?
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Peter</b></span>
-            <span>4d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={5} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illo odit exercitationem eligendi maiores rerum quo, quos ullam quam! Quia facilis consequatur vitae cupiditate molestias maiores odit magnam quo itaque.
-          </div>
-        </div>
-        <div className="app-review">
-          <div className="app-review-header">
-            <span><b>Alim</b></span>
-            <span>5d ago</span>
-          </div>
-          <div className="app-review-header">
-            <RatingStars rating={1} />
-            <span>johndoe</span>
-          </div>
-          <div className="app-review-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ipsa accusantium qui praesentium, obcaecati quae illum, tempora molestias similique nihil sunt in tempore ipsam laborum illo maxime amet quos consectetur!
-          </div>
-        </div>
+        ))}
       </div>
+
       {app.versions && app.versions.length > 0 && (
         <>
           <AppstoreBlockTitle title="What's New" />
@@ -226,6 +203,7 @@ const AppDetails = ({ packageName, backText }) => {
           </div>
         </>
       )}
+
       <AppstoreBlockTitle title="Information" />
       <List noHairlines noChevron className="safe-areas-inset app-information-list">
         <ListItem title="Provider" after={app.developer.name} />
