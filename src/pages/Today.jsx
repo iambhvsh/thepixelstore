@@ -50,7 +50,7 @@ const Today = () => {
           titleColor="#000"
           titlePosition="bottom"
           titleLarge
-          app={appChatGpt}
+          app={appChatGPT}
         >
           <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Quam corporis minima inventore? Quod unde ex fugiat itaque consequuntur, rem assumenda dolor beatae incidunt facere dolorem nobis repellat expedita sed ea?</p>
           <p>Ducimus, eveniet ea adipisci, impedit repellendus rem doloremque minima incidunt nihil cumque voluptatibus quos laudantium animi quibusdam odio molestias iusto delectus voluptatem! Totam laborum rem numquam temporibus possimus quae iure?</p>
