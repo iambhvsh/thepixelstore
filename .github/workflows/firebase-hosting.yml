@@ -1,4 +1,4 @@
-name: Build Production
+name: Building Production Deployment
 
 on:
   push:
@@ -16,22 +16,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: Use Node.js 18.x
+      - name: Using Node.js 18.x
         uses: actions/setup-node@v2
         with:
           node-version: 18.x
 
-      - name: Install webpack and webpack-cli
+      - name: Installing webpack and webpack-cli
         run: npm install webpack webpack-cli --save-dev
 
-      - name: Set up NODE_ENV
+      - name: Setting up NODE_ENV
         run: |
           export NODE_ENV=production
 
-      - name: Build for production
+      - name: Cleaning Cache...
+        run: |
+          npm cache clean --force
+
+      - name: Building Production
         run: npm run build-prod
 
-      - name: Archive production build
+      - name: Archiving production build
         uses: actions/upload-artifact@v2
         with:
           name: prod-build
@@ -42,7 +46,7 @@ jobs:
             js/
             service-worker.js
 
-      - name: Deploy to Firebase Hosting
+      - name: Deploying to Firebase Hosting
         if: success()
         run: |
           npm install -g firebase-tools
