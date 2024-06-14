@@ -75,7 +75,7 @@ const Today = () => {
           <p>PicsArt is one of today's top apps on the App Store, celebrated for its powerful photo editing and creative tools. It offers a wide range of features including advanced filters, customizable effects, collage making, and drawing tools, all designed to enhance and transform photos into captivating works of art. With a user-friendly interface and a thriving community, PicsArt encourages creativity and collaboration, making it a favorite among aspiring and professional photographers alike.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/75/32/b97532ca-9154-c5f1-3dab-2c2cb38b0290/0fd3257d-2288-46c9-8dd2-2572f3f9c5d3_6_iOS_6.7.jpg/600x0w.webp"
+          image="https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluc3RhZ3JhbXxlbnwwfHwwfHx8MA%3D%3D"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#000"
           titlePosition="bottom"
