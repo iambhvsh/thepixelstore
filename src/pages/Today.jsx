@@ -26,7 +26,7 @@ const Today = () => {
       <AppstorePageTitle title={todayDateTitle} heading={todayDateHeading} accountLink />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx5yge5Fykw5NOLEB03T5sYIJ598va51-DA&usqp=CAU"
+          image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-subscriptions-202108_GEO_MY_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1633475275000"
           title="App Store"
           titleColor="#000"
           titlePosition="bottom"
