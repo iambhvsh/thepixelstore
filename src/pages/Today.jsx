@@ -19,7 +19,7 @@ const Today = () => {
   const appChatGPT = apps.find((app) => app.title === 'ChatGPT');
   const appYoutube = apps.find((app) => app.title === 'YouTube: Watch, Listen, Stream');
   const appInstagram = apps.find((app) => app.title === 'Instagram');
-  const appPicsArt = apps.find((app) => app.title === 'PicsArt Light: Photo Editor + Collage');
+  const appPicsArt = apps.find((app) => app.title === 'PicsArt Lite: Photo Editor + Collage');
 
   return (
     <AppstorePage noCollapsedNavbar>
@@ -27,14 +27,14 @@ const Today = () => {
       <div className="appstore-card-grid">
         <AppstoreCard
           image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-subscriptions-202108_GEO_MY_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1633475275000"
-          title="App Store"
+          title="thepixelstore"
           titleColor="#000"
           titlePosition="top"
           subtitle="About"
           subtitleColor="#000"
           closeButtonColor="#000"
         >
-          <p>Welcome to the PixelPulse Store, a cutting-edge marketplace built on ReactJs and Framework7. Our goal is to deliver a flawless user experience, combining seamless functionality with visually captivating design, reminiscent of the renowned iOS App Store. Discover a curated selection of applications designed to enhance productivity, creativity, and entertainment, all within an interface that prioritizes both style and usability.</p>
+          <p>Welcome to <b>thepixelstore</b>, a cutting-edge marketplace built on ReactJs and Framework7. Our goal is to deliver a flawless user experience, combining seamless functionality with visually captivating design, reminiscent of the renowned iOS App Store. Discover a curated selection of applications designed to enhance productivity, creativity, and entertainment, all within an interface that prioritizes both style and usability.</p>
           
         </AppstoreCard>
 
