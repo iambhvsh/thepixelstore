@@ -1,12 +1,12 @@
 [
   {
-    "packageName": "slapking.io",
+    "packageName": "mobi.gameguru.slapkings",
     "featured": "New Release",
     "title": "Slap Kings",
     "slug": "slap-kings",
     "subtitle": "Become world's best slapper",
-    "icon": "slap-kings-icon.jpg",
-    "thumbnail": "chatgptthumb.jpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0f/b0/d8/0fb0d855-47bf-7ac3-4e14-a11e59d6ddb6/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp",
+    "thumbnail": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0f/b0/d8/0fb0d855-47bf-7ac3-4e14-a11e59d6ddb6/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x600wa.png",
     "description": "Most relaxing challenge you ever played!\nSlap your opponents to be the best slapper!\nEach turn you and your op",
     "price": "$0.00",
     "release_date": "2020-02-23T00:00:00",
@@ -19,10 +19,10 @@
       "id": 978359163
     },
     "screenshots": [
-      "slap-kings-1.jpg",
-      "slap-kings-2.jpg",
-      "slap-kings-3.jpg",
-      "slap-kings-4.jpg"
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/a2/97/a0/a297a018-e115-88f5-4aa1-b916b6df513c/pr_source.jpg/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/35/06/c5/3506c550-1baf-6f76-e585-0de0c07bbeea/pr_source.jpg/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/af/11/d1/af11d155-2a9c-462a-80fe-2d74e428ae95/pr_source.jpg/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/97/c0/a8/97c0a811-3bfc-c198-1464-f163898fd44c/pr_source.jpg/600x0w.webp"
     ],
     "versions": [
       {
@@ -33,13 +33,13 @@
     ]
   },
   {
-    "packageName": "sortit.io",
-    "featured": false,
+    "packageName": "com.game.sortit3d",
+    "featured": "Update",
     "title": "Sort It 3D",
     "slug": "sort-it-3d",
     "subtitle": "Gotta sort them all!!",
-    "icon": "sort-it-3d-icon.jpg",
-    "thumbnail": "instagramthumb.jpg",
+    "icon": "http://appstore-f7-react.uiinitiative.com/sort-it-3d-icon.jpg",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNVaIY-7ASjNd-yRdItijPHbXAtaGWDU4p7q594__IfWfIG0I6C9C6tPE&s=10",
     "description": "Gota sort them all!!\n\nSort all color balls in the tubes,\nHow far can you go?",
     "price": "$0.00",
     "release_date": "2020-01-09T00:00:00",
@@ -52,11 +52,11 @@
       "id": 1499845738
     },
     "screenshots": [
-      "sort-it-3d-1.jpg",
-      "sort-it-3d-2.jpg",
-      "sort-it-3d-3.jpg",
-      "sort-it-3d-4.jpg",
-      "sort-it-3d-5.jpg"
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/fe/7f/f2/fe7ff283-c8cf-6d7e-179f-f1e026b38ae2/d7523de2-bc4c-43bc-a0c3-77805cd86f0a_1242x2688-screenshot.png__U00287_U0029.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/af/76/d8/af76d891-8694-f947-5feb-552f4ff3e318/dceea08d-7979-4080-8123-fd24b33c4c36_1242x2688-screenshot.png__U00283_U0029.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/00/00/d9/0000d932-b882-ed96-8d0c-0eb3e7808b7d/a7af13c0-ec98-4438-b315-6aad6e419417_1242x2688-screenshot.png__U00282_U0029.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/8b/78/3f/8b783f4c-ae98-e4b3-acca-a7a6527c309f/43c4b1fc-82a1-4eb1-9bdb-b0c01d0e38d4_1242x2688-screenshot.png__U00284_U0029.png/600x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/5a/19/bc/5a19bccd-45b5-2c83-eaf2-61cacf90f0d8/3196c7d4-c359-449a-a683-2c7d4aa942fd_1242x2688-screenshot.png__U00286_U0029.png/600x0w.webp"
     ],
     "versions": [
       {
