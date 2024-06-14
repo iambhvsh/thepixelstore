@@ -52,6 +52,7 @@ const Today = () => {
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQark5NoC2-pK418pUOKf_eV2jg0U8M0Wsby3XZONawJXKS0y4PLRc_yXfo&s=10"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
+          background="#fff"
           titlePosition="bottom"
           titleLarge
           app={appYoutube}
