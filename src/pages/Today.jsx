@@ -26,10 +26,10 @@ const Today = () => {
       <AppstorePageTitle title={todayDateTitle} heading={todayDateHeading} accountLink />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image="https://cdn.jsdelivr.net/gh/iambhvsh/surecdn@main/images/app-store/appstorelogo.png"
-          title="PixelPulse Store"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnx5yge5Fykw5NOLEB03T5sYIJ598va51-DA&usqp=CAU"
+          title="App Store"
           titleColor="#000"
-          titlePosition="top"
+          titlePosition="bottom"
           subtitle="About"
           subtitleColor="#000"
           closeButtonColor="#000"
@@ -39,7 +39,7 @@ const Today = () => {
         </AppstoreCard>
 
         <AppstoreCard
-          image="https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf210LacD3OodVEPHY2JA3X2NyvhJd-7DMDp_GA5RhCKIaL7umbI4d1TJF&s=10"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
           appColor="#000"
@@ -50,7 +50,7 @@ const Today = () => {
           <p>ChatGPT is an advanced AI language model developed by OpenAI, designed to engage in natural language conversations with users. Available through various platforms and integrations, the ChatGPT app allows users to interact with the model to ask questions, seek information, receive explanations, and even generate text based on prompts. It leverages machine learning to continuously improve its responses, offering personalized interactions and serving a wide range of practical and creative purposes for users seeking conversational AI capabilities.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQark5NoC2-pK418pUOKf_eV2jg0U8M0Wsby3XZONawJXKS0y4PLRc_yXfo&s=10"
+          image="https://lh3.googleusercontent.com/2-0x2zGlIVIWaFQCp44V3eWmpI8UJMBKHGIvjwOhN0zvjCKSIQB_1bkBhe5dCD9qDkaCJW_pdmHAscnr7m70NlvVTDWslJWrdrNdzuOQbzKUSy5KB3c"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
           titlePosition="bottom"
@@ -74,7 +74,7 @@ const Today = () => {
           <p>PicsArt is one of today's top apps on the App Store, celebrated for its powerful photo editing and creative tools. It offers a wide range of features including advanced filters, customizable effects, collage making, and drawing tools, all designed to enhance and transform photos into captivating works of art. With a user-friendly interface and a thriving community, PicsArt encourages creativity and collaboration, making it a favorite among aspiring and professional photographers alike.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1Ar3ocxArRBBet84T0MScqJbpOmvb0TsTg&usqp=CAU"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGFMsw4Di8bgSzdbwFNJMsaHILqrVVkTRhY62xB32Vn3YmthbJX7HZzEv&s=10"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#000"
           titlePosition="bottom"
