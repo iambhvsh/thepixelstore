@@ -28,6 +28,7 @@ const Today = () => {
         <AppstoreCard
           image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-subscriptions-202108_GEO_MY_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1633475275000"
           title="thepixelstore"
+          titleLarge
           titleColor="#000"
           titlePosition="top"
           subtitle="About"
