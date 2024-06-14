@@ -42,6 +42,7 @@ const Today = () => {
           image="https://www.ultimate.ai/hs-fs/hubfs/ChatGPT_Blog_Header_1200x628_2x.jpg?width=1200&height=628&name=ChatGPT_Blog_Header_1200x628_2x.jpg"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
+          appColor="#000"
           titlePosition="bottom"
           titleLarge
           app={appChatGPT}
