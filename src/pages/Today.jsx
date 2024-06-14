@@ -68,7 +68,7 @@ const Today = () => {
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDjApsH7oCOXK2rPBdAWGAhAmR6vKPt_4jK2JH63QDAJYdJ0jgwzDA9Q&s=10"
           title="EDITING"
           subtitle="Best in"
-          titleColor="#fff"
+          titleColor="#000"
           titlePosition="bottom"
           titleLarge
           app={appPicsArt}
