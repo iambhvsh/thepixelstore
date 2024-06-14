@@ -50,7 +50,7 @@ const Today = () => {
           <p>ChatGPT is an advanced AI language model developed by OpenAI, designed to engage in natural language conversations with users. Available through various platforms and integrations, the ChatGPT app allows users to interact with the model to ask questions, seek information, receive explanations, and even generate text based on prompts. It leverages machine learning to continuously improve its responses, offering personalized interactions and serving a wide range of practical and creative purposes for users seeking conversational AI capabilities.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="https://lh3.googleusercontent.com/2-0x2zGlIVIWaFQCp44V3eWmpI8UJMBKHGIvjwOhN0zvjCKSIQB_1bkBhe5dCD9qDkaCJW_pdmHAscnr7m70NlvVTDWslJWrdrNdzuOQbzKUSy5KB3c"
+          image="https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#fff"
           titlePosition="bottom"
