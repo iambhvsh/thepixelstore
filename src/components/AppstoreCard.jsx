@@ -8,6 +8,7 @@ const AppstoreCard = ({
   imageAlt = '',
   title = '',
   titleColor = '#000',
+  background = '',
   subtitle = '',
   subtitleColor = '#000',
   titleLarge = false,
@@ -30,7 +31,7 @@ const AppstoreCard = ({
   return (
     <Card expandable className="appstore-card">
       <CardContent padding={false}>
-        <div className={`appstore-card-header appstore-card-header-text-${titlePosition}`}>
+        <div className={`appstore-card-header background appstore-card-header-text-${titlePosition}`}>
           <img src={image} alt={imageAlt} />
           <div className="appstore-card-header-text">
             <div className="appstore-card-subtitle" style={{ color: subtitleColor }}>{subtitle}</div>
