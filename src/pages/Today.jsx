@@ -29,7 +29,7 @@ const Today = () => {
           image="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-subscriptions-202108_GEO_MY_FMT_WHH?wid=618&hei=900&fmt=p-jpg&qlt=95&.v=1633475275000"
           title="App Store"
           titleColor="#000"
-          titlePosition="bottom"
+          titlePosition="top"
           subtitle="About"
           subtitleColor="#000"
           closeButtonColor="#000"
@@ -52,7 +52,7 @@ const Today = () => {
         <AppstoreCard
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlY38cPwF-QilyRTb2jBBmsUebM5V_MczmMzvzzuHKzvtGy2RVJhfchF0&s=10"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
-          titleColor="#a9a9a9"
+          titleColor="#FFA500"
           titlePosition="bottom"
           titleLarge
           app={appYoutube}
@@ -65,7 +65,8 @@ const Today = () => {
       <div className="appstore-card-grid">
         <AppstoreCard
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_SCoNGsXZPFSxTV_vd-iaW7da9yMYFOZ6HWBqN8DhIJJ2MMtPY3ROdg&s=10"
-          title={(<span>GAME<br />OF THE<br />DAY</span>)}
+          title="EDITING"
+          subtitle="Best in"
           titleColor="#fff"
           titlePosition="bottom"
           titleLarge
