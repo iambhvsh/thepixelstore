@@ -71,6 +71,7 @@ const Today = () => {
           titleColor="#000"
           titlePosition="bottom"
           titleLarge
+          appColor="#000"
           app={appPicsArt}
         >
           <p>PicsArt is one of today's top apps on the App Store, celebrated for its powerful photo editing and creative tools. It offers a wide range of features including advanced filters, customizable effects, collage making, and drawing tools, all designed to enhance and transform photos into captivating works of art. With a user-friendly interface and a thriving community, PicsArt encourages creativity and collaboration, making it a favorite among aspiring and professional photographers alike.</p>
