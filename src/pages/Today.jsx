@@ -52,7 +52,7 @@ const Today = () => {
         <AppstoreCard
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlY38cPwF-QilyRTb2jBBmsUebM5V_MczmMzvzzuHKzvtGy2RVJhfchF0&s=10"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
-          titleColor="#000"
+          titleColor="#fff"
           titlePosition="bottom"
           titleLarge
           app={appYoutube}
