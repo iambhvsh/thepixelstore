@@ -64,7 +64,7 @@ const Today = () => {
       <AppstorePageTitle title={yesterdayDateTitle} heading={yesterdayDateHeading} accountLink={false} />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_SCoNGsXZPFSxTV_vd-iaW7da9yMYFOZ6HWBqN8DhIJJ2MMtPY3ROdg&s=10"
+          image="http://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/88/93/608893c8-faea-0393-ccc4-b3fdeaa523cb/86c528d0-5e97-4bab-84c8-211144fc813e_1._Multiple_Use_Cases___iPhone_6.5_"
           title="EDITING"
           subtitle="Best in"
           titleColor="#fff"
@@ -75,7 +75,7 @@ const Today = () => {
           <p>PicsArt is one of today's top apps on the App Store, celebrated for its powerful photo editing and creative tools. It offers a wide range of features including advanced filters, customizable effects, collage making, and drawing tools, all designed to enhance and transform photos into captivating works of art. With a user-friendly interface and a thriving community, PicsArt encourages creativity and collaboration, making it a favorite among aspiring and professional photographers alike.</p>
         </AppstoreCard>
         <AppstoreCard
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGFMsw4Di8bgSzdbwFNJMsaHILqrVVkTRhY62xB32Vn3YmthbJX7HZzEv&s=10"
+          image="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/75/32/b97532ca-9154-c5f1-3dab-2c2cb38b0290/0fd3257d-2288-46c9-8dd2-2572f3f9c5d3_6_iOS_6.7.jpg/600x0w.webp"
           title={(<span>APP<br />OF THE<br />DAY</span>)}
           titleColor="#000"
           titlePosition="bottom"
