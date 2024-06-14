@@ -64,7 +64,7 @@ const Today = () => {
       <AppstorePageTitle title={yesterdayDateTitle} heading={yesterdayDateHeading} accountLink={false} />
       <div className="appstore-card-grid">
         <AppstoreCard
-          image="http://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/88/93/608893c8-faea-0393-ccc4-b3fdeaa523cb/86c528d0-5e97-4bab-84c8-211144fc813e_1._Multiple_Use_Cases___iPhone_6.5_"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDjApsH7oCOXK2rPBdAWGAhAmR6vKPt_4jK2JH63QDAJYdJ0jgwzDA9Q&s=10"
           title="EDITING"
           subtitle="Best in"
           titleColor="#fff"
