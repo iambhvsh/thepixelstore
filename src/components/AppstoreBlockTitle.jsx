@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './AppstoreBlockTitle.less';
 
 const AppstoreBlockTitle = ({
@@ -7,9 +6,9 @@ const AppstoreBlockTitle = ({
   children,
 }) => {
   return (
-    <div className="block-title appstore-block-title">
-      <span className="title-text">{title}</span>
+    <div className="appstore-block-title">
       <hr className="title-line" />
+      <div className="title-text">{title}</div>
       {children}
     </div>
   );
