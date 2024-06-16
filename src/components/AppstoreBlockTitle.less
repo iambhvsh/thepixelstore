@@ -1,25 +1,34 @@
 .appstore-block-title {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start (left) */
-  padding-top: 8px; /* Adjust as needed */
-}
-
-.title-text {
-  font-size: 21px;
-  font-weight: bold;
-  margin-top: 10px; /* Adjust as needed */
+  align-items: flex-start;
+  padding-top: 8px;
 }
 
 .title-line {
+  flex: 1;
+  border: none;
+  border-top: 1px solid var(--f7-block-strong-border-color);
+  margin-bottom: 8px;
+}
+
+.title-content {
   width: 100%;
-  border: none; /* Remove default hr border */
-  border-top: 1px solid var(--f7-block-strong-border-color); /* Adjust color as needed */
-  margin-bottom: 8px; /* Adjust bottom margin as needed */
+  display: flex;
+  justify-content: space-between; /* Title on the start, action links on the end */
+  align-items: center;
+}
+
+.title-text {
+  flex: 1; /* Title takes up remaining space */
+}
+
+.title-text span {
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .title-actions {
-  margin-top: 8px; /* Adjust as needed */
   display: flex;
-  gap: 8px; /* Adjust gap between children as needed */
+  align-items: center;
 }
