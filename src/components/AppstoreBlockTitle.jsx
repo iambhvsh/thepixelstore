@@ -9,7 +9,7 @@ const AppstoreBlockTitle = ({
     <div className="appstore-block-title">
       <hr className="title-line" />
       <div className="title-text">{title}</div>
-      {children}
+      <div className="title-actions">{children}</div>
     </div>
   );
 };
