@@ -1,27 +1,19 @@
-/* AppstoreBlockTitle.less */
-
 .appstore-block-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 10px; // Adjust as needed
-  margin-top: 5px; // Adjust as needed
-  margin-bottom: 0; // No bottom margin
-  white-space: normal;
-  --f7-block-title-font-size: 21px;
-  --f7-block-title-font-weight: bold;
-  --f7-block-title-line-height: 1.4;
+  padding-top: 8px; /* Adjust as needed */
+}
 
-  .title-line {
-    width: calc(100% - 20px); // Adjust the width and margin as needed
-    border-top: 1px solid var(--f7-block-strong-border-color); // Adjust color as needed
-    margin: 10px auto; // Adjust margin as needed (top and bottom are 10px, left and right are auto)
-  }
+.title-text {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 10px; /* Adjust as needed */
+}
 
-  .link {
-    font-size: 17px;
-    font-weight: normal;
-    flex-shrink: 0;
-    margin-left: 10px; // Adjust as needed
-  }
+.title-line {
+  width: 100%;
+  border: none; /* Remove default hr border */
+  border-top: 1px solid var(--f7-block-strong-border-color); /* Adjust color as needed */
+  margin-bottom: 8px; /* Adjust bottom margin as needed */
 }
