@@ -38,7 +38,7 @@
     "title": "Sort It 3D",
     "slug": "sort-it-3d",
     "subtitle": "Gotta sort them all!!",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/sort-it-3d-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/sort-it-3d-icon.jpg",
     "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNVaIY-7ASjNd-yRdItijPHbXAtaGWDU4p7q594__IfWfIG0I6C9C6tPE&s=10",
     "description": "Gota sort them all!!\n\nSort all color balls in the tubes,\nHow far can you go?",
     "price": "$0.00",
@@ -72,7 +72,7 @@
     "title": "The Seven Deadly Sins",
     "slug": "the-seven-deadly-sins",
     "subtitle": "Grand Cross - RPG Sensation!",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-icon.jpg",
     "description": "Are you ready to enjoy dynamic combat, breathtaking animations, and a riveting story true to the original?\n\nDownload the amazing cinematic anime game, The Seven Deadly Sins: Grand Cross, right now!\n\n=====================================\nFeatures of The Seven Deadly Sins: Grand Cross \n=====================================\n\n▶ A brand-new turn-based RPG! A novel approach to combat! A strategic combat system utilizing skill synthesis.\nSkills with the same star rank upgrade to a higher rank when they're next to each other!\nFeel the thrill of battle with each turn in the dynamic combat system.\nCombine cards and use them to trigger an \"Ultimate Move\" to decimate opponents!\nCreate your own strategy by combining the unique skills of [The Seven Deadly Sins] characters.\n\n▶ Cooperate with friends to take down a giant demon in Death Match mode, and enjoy exciting and diverse PvP content.\nEnjoy Death Match, 2-player cooperative content played in real time!\nDefeat demons with a friend before time expires to defend the kingdom!\nAn Arena where you can compete with players all around the world awaits.\nFind your own strategy to win!\n\n▶ Build your very own team in the [The Seven Deadly Sins]!\n[The Seven Deadly Sins] heroes assemble!\nDress up your characters in exclusive, never-before-seen outfits!\nHairstyles and accessories galore to suit your customization needs!\nCheck out the new looks of [The Seven Deadly Sins] characters!\n\n▶ The original world recreated in detail - the animated story beautifully reborn!\nThe continent of Britannia has come to life! The Holy War that ended 3,000 years ago begins anew.\nExperience high-resolution 3D animated cutscenes and prepare for the Holy War alongside the characters of [The Seven Deadly Sins].\n\n▶ Characters rendered in AR, and various other easter eggs await you!\n\n※ Recommended Specs:\n- iOS 9.0 or higher\n- RAM: 2GB or higher\n\n※ This app offer in-app purchases. You can disable this feature by adjusting your device’s settings.\nBy downloading this game, you are agreeing to our Terms of Service and Privacy Policy.\n - Terms of Use: http://help.netmarble.com/policy/terms_of_service.asp\n - Privacy Policy: http://help.netmarble.com/policy/privacy_policy.asp\n\n※ Optional access\nCAMERA\n- Allows the camera for AR function to take pictures with AR characters.\nPHOTO\n- Allows the application to read from the external storage.",
     "price": "$0.00",
     "release_date": "2020-03-02T00:00:00",
@@ -84,15 +84,15 @@
       "id": 930364579
     },
     "screenshots": [
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-1.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-2.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-3.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-4.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-5.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-6.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-7.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-8.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/the-seven-deadly-sins-9.jpg"
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-1.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-2.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-3.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-4.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-5.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-6.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-7.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-8.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/the-seven-deadly-sins-9.jpg"
     ],
     "versions": [
       {
@@ -113,7 +113,7 @@
     "title": "Lucky Looter",
     "slug": "lucky-looter",
     "subtitle": "",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-icon.jpg",
     "description": "Lucky Looter is a new addictive 3D game, featuring colorfull environments and hours of gameplay! \nBe quick and sneaky and grab tons of loots! Watch out for the patrols and become the king of thieves!\n\n\nHow to play:\n- Drag your finger on the screen to move your Thief!\n- Release your finger to hide in the box!\n- Don't get caught by the Police!\n\nFeatures:\n- Sweet 3D low poly environments\n- Tons of collectables: buy new cars, new clothes, and much more!\n- Easy to pick up",
     "price": "$0.00",
     "release_date": "2020-02-24T00:00:00",
@@ -125,11 +125,11 @@
       "id": 1218338313
     },
     "screenshots": [
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-1.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-2.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-3.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-4.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/lucky-looter-5.jpg"
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-1.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-2.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-3.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-4.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/lucky-looter-5.jpg"
     ],
     "versions": [
       {
@@ -165,7 +165,7 @@
     "title": "Brain Test: Tricky Puzzles",
     "slug": "brain-test-tricky-puzzles",
     "subtitle": "Can you solve them all?",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-icon.jpg",
     "description": "Brain Test is an addictive free tricky puzzle game with a series of tricky brain teasers. Different riddles testing will challenge your mind. This new puzzle game may break common sense and bring your new brain-pushing experience! You can enjoy yourself with your friends with this addictive and funny free IQ game. Get ready to take the quiz!\n\nIf you are a fan of word game, word search game, puzzle, sudoku or any other quiz games, Brain Test is your best choice!\n\nFeatures:\n• Tricky & Mind-blowing Brain Teasers: You will be tricked!\n• Unexpected game answers to the great number of quizzes.\n• Fun for All Ages: The best trivia game for family & friends’ gatherings!\n• Download this funny game for free.\n• Endless fun and brain-pushing games.\n• Great exercise for the brain.\n• Simple and highly addictive game play.\n• Great time filler.\n• Play without the internet.\n• Play offline.\n\nHave fun!\n\n\nSubscription Terms:\n\nVIP PACKAGE: Access offers a weekly subscription, you will have a 3-days FREE trial period, after this period you will be charged.\n\nAfter buying this subscription, you will unlock following features: instant 100 lamps, no ads, double daily gift, 50% cheaper skips and 40% cheaper hints.\n\nThis is an Auto-renewable subscription. The payment is charged to your account after confirmation. The subscription is renewed unless you turn it off 24 hours before the period ends. Your account will be charged for renewal as well.\n\nEnd of trial and subscription renewal:\n\n• The payment is charged to your account after a confirmation of purchase.\n• The subscription is renewed unless you turn it off 24 hour before the end of the current period.\n• The account will be charged for renewal within 24 hours before the end of the current period at the cost of the weekly subscription.\n• The user may manage the subscription and auto-renewal have to be turned off by going to the user’s account settings after purchase in the Store.\n• No cancellation of the current subscription is allowed during the active subscription period.\n\nCanceling a trial or a subscription:\n\n• If you want to cancel a subscription during its free trial, you have to cancel it through your account in the Store. This must be done at least 24 hours before the end of the free trial period to avoid being charged.\n\nFor more information, please visit https://support.apple.com/HT207865 for more information\n\nIf there is questions contact us unico@unicogames.co\n\nPrivacy Policy and Terms of Use\nPrivacy Policy: https://unicostudio.co/privacy.html\nTerms of Use: https://unicostudio.co/terms.html",
     "price": "$0.00",
     "release_date": "2019-11-12T00:00:00",
@@ -177,16 +177,16 @@
       "id": 1467451326
     },
     "screenshots": [
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-1.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-2.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-3.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-4.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-5.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-6.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-7.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-8.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-9.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/brain-test-tricky-puzzles-10.jpg"
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-1.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-2.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-3.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-4.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-5.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-6.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-7.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-8.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-9.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/brain-test-tricky-puzzles-10.jpg"
     ],
     "versions": [
       {
@@ -222,7 +222,7 @@
     "title": "OverTake",
     "slug": "overtake",
     "subtitle": "Avoid head-on collisions!",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-icon.jpg",
     "description": "Overtaking has never been more fun! \n\nThere is only one rule here: avoid head-on collisions, they are deadly. And keep an eye on the fuel, you shouldn’t run out.\n\nJust press and hold to overtake the cars in front of you and let go to return to your lane.\n\nThere’s no speed limit so enjoy the drive!\n\nOverTake features:\n- Simple and fun gameplay\n- Increasingly challenging levels\n- New cars to unlock",
     "price": "$0.00",
     "release_date": "2020-02-26T00:00:00",
@@ -234,11 +234,11 @@
       "id": 497961736
     },
     "screenshots": [
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-1.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-2.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-3.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-4.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/overtake-5.jpg"
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-1.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-2.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-3.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-4.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/overtake-5.jpg"
     ],
     "versions": [
       {
@@ -274,7 +274,7 @@
     "title": "Cut and Paint",
     "slug": "cut-and-paint",
     "subtitle": "",
-    "icon": "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-icon.jpg",
     "description": "Real Carpentry Experience!\nTrim,Scrape,Cut and Paint the wooden blocks.\nSell them and make profit for your Wood Shop.\nSimple Controls, Addictive Gameplay.\nEnjoy!",
     "price": "$0.00",
     "release_date": "2020-02-15T00:00:00",
@@ -286,12 +286,12 @@
       "id": 901903273
     },
     "screenshots": [
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-1.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-2.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-3.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-4.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-5.jpg",
-      "https://raw.githubusercontent.com/framework7io/framework7-appstore-react/master/src/static/apps-image/static/apps-images/cut-and-paint-6.jpg"
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-1.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-2.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-3.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-4.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-5.jpg",
+      "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/cut-and-paint-6.jpg"
     ],
     "versions": [
       {
@@ -455,7 +455,7 @@
     "title": "Johnny Trigger",
     "slug": "johnny-trigger",
     "subtitle": "Bullet time!",
-    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/apps-images/johnny-trigger-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/johnny-trigger-icon.jpg",
     "description": "Do you have what it takes to take down the underground world of mafia?\nLess talk, more bullet.",
     "price": "$0.00",
     "release_date": "2019-12-18T00:00:00",
@@ -508,7 +508,7 @@
     "title": "Draw Climber",
     "slug": "draw-climber",
     "subtitle": "Draw your legs and run!",
-    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/apps-images/draw-climber-icon.jpg",
+    "icon": "https://cdn.jsdelivr.net/gh/framework7io/framework7-appstore-react@master/src/static/apps-images/draw-climber-icon.jpg",
     "description": "Funniest race you ever played!\n\nDraw your legs to win the race! \n\nAny drawing will make you run!\n\nWhen you are stuck you can draw another shape to pass!",
     "price": "$0.00",
     "release_date": "2020-01-31T00:00:00",
