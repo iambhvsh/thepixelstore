@@ -1,16 +1,18 @@
-@import url("../css/_mixins.less");
-
 .appstore-block-title {
-  .hairline(top, var(--f7-block-strong-border-color));
+  position: relative; // Ensure the element is positioned relative to its container
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
-  padding-bottom: 16px;
+  padding-top: 5px; // Ensure padding-top is 5px
+  margin: 0; // Reset margin to 0
+  margin-top: 5px; // Add top margin of 5px
   white-space: normal;
   --f7-block-title-font-size: 21px;
   --f7-block-title-font-weight: bold;
   --f7-block-title-line-height: 1.4;
+  border-top: 1px solid var(--f7-block-strong-border-color); // Create a 1px solid border top
+  box-sizing: border-box; // Ensure border box sizing to include padding and border in total width/height
+
   > .link {
     font-size: 17px;
     font-weight: normal;
