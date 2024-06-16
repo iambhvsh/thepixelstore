@@ -8,8 +8,14 @@ const AppstoreBlockTitle = ({
   return (
     <div className="appstore-block-title">
       <hr className="title-line" />
-      <div className="title-text">{title}</div>
-      <div className="title-actions">{children}</div>
+      <div className="title-content">
+        <div className="title-text">
+          <span>{title}</span>
+        </div>
+        <div className="title-actions">
+          {children}
+        </div>
+      </div>
     </div>
   );
 };
