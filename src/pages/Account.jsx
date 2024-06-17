@@ -1,5 +1,4 @@
 import React from 'react';
-import avatarSrc from '../assets/avatar.jpeg';
 import {
   Popup,
   Page,
@@ -8,10 +7,10 @@ import {
   List,
   ListItem,
   ListButton,
-  BlockTitle,
 } from 'framework7-react';
 
 import './Account.less';
+import avatarSrc from '../assets/avatar.jpeg';
 
 const Account = () => {
   return (
@@ -31,43 +30,29 @@ const Account = () => {
             <img slot="media" src={avatarSrc} alt="Bhavesh Patil" />
           </ListItem>
         </List>
-        
-        <BlockTitle>User Profile</BlockTitle>
         <List>
           <ListItem
-            title="Full Name"
-            after="Bhavesh Patil"
+            title="Github"
+            link="https://github.com/iambhvsh"
           />
           <ListItem
-            title="Username"
-            after="iambhvsh"
+            title="Telegram"
+            link="https://t.me/iambhvsh"
           />
           <ListItem
-            title="Email"
-            after="iambhvshh@outlook.com"
-            link="mailto: iambhvshh@outlook.com"
-          />
-        </List>
-
-        <BlockTitle>Links</BlockTitle>
-        <List>
-          <ListButton
             title="Website"
             link="https://iambhvsh.vercel.app"
           />
-          <ListButton
-            title="Source Code"
-            link="https://github.com/iambhvsh/app-store"
+        </List>
+        <List>
+          <ListButton link="mailto:iambhvshh@outlook.com">Apple ID</ListButton>
+          <ListButton link="mailto:iam.bhvsh@gmail.com">Google ID</ListButton>
+        </List>
+        <List>
+          <ListItem
+            title="Install XAPK"
+            link="https://d.apkpure.com/b/APK/com.wuliang.xapkinstaller?version=latest"
           />
-          <ListButton
-            title="Github"
-            link="https://github.com/iambhvsh"></ListButton>
-          <ListButton
-            title="Telegram"
-            link="https://t.me/iambhvsh"></ListButton>
-          <ListButton
-            title="Apple ID"
-            link="mailto:iambhvshh@outlook.com"></ListButton>
         </List>
       </Page>
     </Popup>
