@@ -24,7 +24,7 @@ const Account = () => {
           <ListItem
             className="account-user"
             title="Bhavesh Patil"
-            subtitle="@iambhvsh"
+            subtitle="iambhvsh"
             chevronCenter
             link
           >
@@ -40,69 +40,34 @@ const Account = () => {
           />
           <ListItem
             title="Username"
-            after="@iambhvsh"
+            after="iambhvsh"
           />
           <ListItem
             title="Email"
             after="iambhvshh@outlook.com"
+            link="mailto: iambhvshh@outlook.com"
           />
-        </List>
-        
-        <BlockTitle>Account Actions</BlockTitle>
-        <List>
-          <ListButton>Redeem Gift Card</ListButton>
-          <ListButton>Send Gift Card by Email</ListButton>
-          <ListButton>Add Funds to Apple ID</ListButton>
         </List>
 
-        <BlockTitle>Information</BlockTitle>
+        <BlockTitle>Links</BlockTitle>
         <List>
-          <ListItem
-            title="About"
-            link="#"
+          <ListButton
+            title="Website"
+            link="https://iambhvsh.vercel.app"
           />
-          <ListItem
+          <ListButton
             title="Source Code"
             link="https://github.com/iambhvsh/app-store"
           />
-          <ListItem
-            title="Privacy Policy"
-            link="#"
-          />
-          <ListItem
-            title="Terms of Service"
-            link="#"
-          />
-        </List>
-
-        <BlockTitle>Settings</BlockTitle>
-        <List>
-          <ListItem
-            title="Personalised Recommendations"
-            link="#"
-          />
-        </List>
-
-        <BlockTitle>Connect with Me</BlockTitle>
-        <List>
-          <ListItem
-            title="Twitter"
-            link="https://twitter.com/iambhvsh"
-            external
-            target="_blank"
-          />
-          <ListItem
-            title="LinkedIn"
-            link="https://linkedin.com/in/iambhvsh"
-            external
-            target="_blank"
-          />
-          <ListItem
-            title="GitHub"
-            link="https://github.com/iambhvsh"
-            external
-            target="_blank"
-          />
+          <ListButton
+            title="Github"
+            link="https://github.com/iambhvsh"></ListButton>
+          <ListButton
+            title="Telegram"
+            link="https://t.me/iambhvsh"></ListButton>
+          <ListButton
+            title="Apple ID"
+            link="mailto:iambhvshh@outlook.com"></ListButton>
         </List>
       </Page>
     </Popup>
