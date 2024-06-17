@@ -16,7 +16,7 @@ const Account = () => {
   return (
     <Popup push swipeToClose="to-bottom" className="account-popup">
       <Page className="account-page">
-        <Navbar title="Account">
+        <Navbar title="Developer">
           <Link popupClose slot="right">Done</Link>
         </Navbar>
         <List mediaList>
@@ -27,18 +27,26 @@ const Account = () => {
             chevronCenter
             link="#"
           >
-            <img slot="media" src={avatarSrc} alt="Bhavesh Patil" />
+            <Link popupClose slot="media" external href="#">
+              <img src={avatarSrc} alt="Bhavesh Patil" />
+            </Link>
           </ListItem>
         </List>
         <List>
-          <ListItem title="Github">
-            <Link external href="https://github.com/iambhvsh">Github</Link>
+          <ListItem>
+            <Link external href="https://github.com/iambhvsh">
+              <span slot="title">Github</span>
+            </Link>
           </ListItem>
-          <ListItem title="Telegram">
-            <Link external href="https://t.me/iambhvsh">Telegram</Link>
+          <ListItem>
+            <Link external href="https://t.me/iambhvsh">
+              <span slot="title">Telegram</span>
+            </Link>
           </ListItem>
-          <ListItem title="Website">
-            <Link external href="https://iambhvsh.vercel.app">Website</Link>
+          <ListItem>
+            <Link external href="https://iambhvsh.vercel.app">
+              <span slot="title">Website</span>
+            </Link>
           </ListItem>
         </List>
         <List>
@@ -46,8 +54,10 @@ const Account = () => {
           <ListButton external href="mailto:iam.bhvsh@gmail.com">Google ID</ListButton>
         </List>
         <List>
-          <ListItem title="Install XAPK">
-            <Link external href="https://d.apkpure.com/b/APK/com.wuliang.xapkinstaller?version=latest">Install XAPK</Link>
+          <ListItem>
+            <Link external href="https://d.apkpure.com/b/APK/com.wuliang.xapkinstaller?version=latest">
+              <span slot="title">Install XAPK</span>
+            </Link>
           </ListItem>
         </List>
       </Page>
