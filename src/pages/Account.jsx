@@ -25,7 +25,7 @@ const Account = () => {
             title="Bhavesh Patil"
             subtitle="iambhvsh"
             chevronCenter
-            link
+            link="#"
           >
             <img slot="media" src={avatarSrc} alt="Bhavesh Patil" />
           </ListItem>
@@ -33,25 +33,25 @@ const Account = () => {
         <List>
           <ListItem
             title="Github"
-            link="https://github.com/iambhvsh"
+            href="https://github.com/iambhvsh"
           />
           <ListItem
             title="Telegram"
-            link="https://t.me/iambhvsh"
+            href="https://t.me/iambhvsh"
           />
           <ListItem
             title="Website"
-            link="https://iambhvsh.vercel.app"
+            href="https://iambhvsh.vercel.app"
           />
         </List>
         <List>
-          <ListButton link="mailto:iambhvshh@outlook.com">Apple ID</ListButton>
-          <ListButton link="mailto:iam.bhvsh@gmail.com">Google ID</ListButton>
+          <ListButton href="mailto:iambhvshh@outlook.com">Apple ID</ListButton>
+          <ListButton href="mailto:iam.bhvsh@gmail.com">Google ID</ListButton>
         </List>
         <List>
           <ListItem
             title="Install XAPK"
-            link="https://d.apkpure.com/b/APK/com.wuliang.xapkinstaller?version=latest"
+            href="https://d.apkpure.com/b/APK/com.wuliang.xapkinstaller?version=latest"
           />
         </List>
       </Page>
