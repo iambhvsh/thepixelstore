@@ -21,6 +21,7 @@ import './AppDetails.less';
 function getAppByPackageName(packageName) {
   return [...apps, ...games].find((app) => app.packageName === packageName);
 }
+
 function formatDate(date) {
   const formatter = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'short', day: 'numeric' });
   return formatter.format(new Date(date));
@@ -47,9 +48,11 @@ const AppDetails = ({ packageName, backText }) => {
       navbarShowCount: false,
     });
   }
+
   function pageDestroy() {
     if (pb.current) pb.current.destroy();
   }
+
   function openPhotoBrowser(index) {
     if (!pb.current) return;
     pb.current.open(index);
@@ -60,6 +63,13 @@ const AppDetails = ({ packageName, backText }) => {
       __html: (app.description || '').replace(/\n/g, '<br>'),
     };
   }
+
+  const getButtonLink = () => {
+    if (app.extLink && app.extLink.length > 0) {
+      return app.extLink[0];
+    }
+    return `https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`;
+  };
 
   return (
     <Page onPageInit={pageInit} onPageBeforeRemove={pageDestroy}>
@@ -72,7 +82,7 @@ const AppDetails = ({ packageName, backText }) => {
           <img src={app.icon} alt={app.title} />
         </div>
         <div className="app-navbar-button" slot="right">
-          <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
+          <Button external href={getButtonLink()} round fill>GET</Button>
         </div>
       </Navbar>
       <div className="block app-header">
@@ -81,7 +91,7 @@ const AppDetails = ({ packageName, backText }) => {
           <div className="app-header-title">{app.title}</div>
           <div className="app-header-subtitle">{app.subtitle}</div>
           <div className="app-header-actions">
-            <Button external target="_blank" href={`https://d.cdnpure.com/b/APK/${app.packageName}?version=latest`} round fill>GET</Button>
+            <Button external href={getButtonLink()} round fill>GET</Button>
             <Link iconF7="square_arrow_up" />
           </div>
           <div className="app-header-ratings">
@@ -202,7 +212,7 @@ const AppDetails = ({ packageName, backText }) => {
         </div>
         <div className="app-review">
           <div className="app-review-header">
-            <span><b>Alim</b></span>
+                       <span><b>Alim</b></span>
             <span>5d ago</span>
           </div>
           <div className="app-review-header">
