@@ -3,16 +3,19 @@ import { Link } from 'framework7-react';
 
 import './FeaturedApps.less';
 
-const FeaturedApps = ({ apps, useThumbnail, backText }) => {
+const FeaturedApps = ({ apps, games, useThumbnail, backText }) => {
+  // Combine apps and games into a single array
+  const items = [...(apps || []), ...(games || [])];
+
   return (
     <div className="block featured-apps">
-      {apps.map((app) => (
-        <div className="featured-app" key={app.packageName}>
-          <Link noLinkClass href={`/app/${app.packageName}`} routeProps={{ backText }}>
-            <div className="featured-app-headline">{app.featured}</div>
-            <div className="featured-app-title">{app.title}</div>
-            <div className="featured-app-subtitle">{app.subtitle}</div>
-            <img loading="lazy" className="featured-app-image" alt={app.title} src={useThumbnail ? app.thumbnail : app.screenshots[0]} />
+      {items.map((item) => (
+        <div className="featured-app" key={item.packageName}>
+          <Link noLinkClass href={`/app/${item.packageName}`} routeProps={{ backText }}>
+            <div className="featured-app-headline">{item.featured}</div>
+            <div className="featured-app-title">{item.title}</div>
+            <div className="featured-app-subtitle">{item.subtitle}</div>
+            <img loading="lazy" className="featured-app-image" alt={item.title} src={useThumbnail ? item.thumbnail : item.screenshots[0]} />
           </Link>
         </div>
       ))}
