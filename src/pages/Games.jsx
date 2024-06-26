@@ -29,7 +29,7 @@ const Games = () => {
 
   return (
     <AppstorePage title="Games">
-      <FeaturedApps backText="Games" apps={featuredGames} />
+      <FeaturedApps backText="Games" games={featuredGames} />
 
       <AppstoreBlockTitle title="What We're Playing Now">
         <Link>See All</Link>
