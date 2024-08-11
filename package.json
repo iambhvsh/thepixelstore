@@ -114,7 +114,7 @@
   "dependencies": {
     "dom7": "^3.0.0",
     "framework7": "^6.0.3",
-    "framework7-icons": "^3.0.0",
+    "framework7-icons": "^5.0.0",
     "framework7-react": "^6.0.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
